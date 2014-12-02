@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+	<head>
+		<title>FiduBogotá</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<div id="css"></div>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<script src="UserSystem/js/jquery-1.9.1.js" type="text/javascript"></script>
+		<script src="UserSystem/js/jquery-ui-1.10.1.min.js" type="text/javascript"></script>
+		<script src="UserSystem/js/llamados.js" type="text/javascript"></script>
+		<!-- importo los CSS -->
+		<link href="UserSystem/css/reset.css" rel="stylesheet" type="text/css"/>
+		<link href="UserSystem/css/fuentes.css" rel="stylesheet" type="text/css"/>
+		<link href="UserSystem/css/estilos.css" rel="stylesheet" type="text/css"/>
+		<link rel="stylesheet" href="UserSystem/css/jquery.mobile-1.4.4.css">
+
+
+		<!-- JS Tabs -->
+		<script src="UserSystem/js/vendor/jquery-1.7.1.min.js" type="text/javascript"></script>
+		<script src="UserSystem/js/vendor/jquery.hashchange.min.js" type="text/javascript"></script>
+		<script src="UserSystem/js/vendor/lib/jquery.easytabs.min.js" type="text/javascript"></script>
+		<!--Script Tabs-->
+		<script type="text/javascript">
+			$(document).ready(function() {
+			$('#tab-container').easytabs();
+			});
+		</script>
+		<!--Js Principales tales como header y footer-->
+		<script src="UserSystem/js/principales.js" type="text/javascript"></script>
+
+	</head>
+
+	<body class="homeFidu" >
+
+	<!-- inicio del header -->
+	<header >
+		<!-- inicio del encabezado -->
+		<div class="home">
+			<h1>Bienvenido a MASS</h1>
+			<h4>Selecciona una de las siguientes opciones</h4>
+		</div>
+		<!-- fin del encabezado -->
+
+	</header>
+	<!-- fin del header -->
+	<!-- inicio barra contenidos -->
+	<div class="contenidos-home">
+		<div class="contenedor-home">
+			<!-- Botones home -->
+			
+			<button onClick='javascript: window.location.href="ceois-intro.html";' class="boton-home" type="button">
+				CEOIS
+			</button>
+			<button onClick='javascript: window.location.href="pmp-intro.html";' class="boton-home" type="button">
+				PMP
+			</button>
+			<button onClick='javascript: window.location.href="premium-menu.html";' class="boton-home-premium" type="button">
+				PREMIUM
+			</button>
+
+		</div>
+		<footer class="home">
+			<div class="contenedor-home">
+				<img src="UserSystem/img/logo/logoFiduciariaBogotaHome.png" />
+			</div>
+		</footer>
+
+		<!-- fin barra footer -->
+	</div>
+
+
+	</body>
+</html>

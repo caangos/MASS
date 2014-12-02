@@ -1,0 +1,9 @@
+{
+    "parametros": [
+        {
+            "var_rentabilidad": 1,
+            "var_indice": 100,
+            "fecha_inicio": "31/12/2010"
+        }
+    ]
+}

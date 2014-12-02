@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>FiduBogotá</title>
+        <meta charset="UTF-8">
+        <link href="UserSystem/css/datepicker/jquery-ui-1.10.1.css" rel="stylesheet" type="text/css"/>
+        <link href="UserSystem/css/datepicker/nigran.datepicker.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+
+
+        <a href="#" id="calcular">ver calculo</a>
+
+        <script src="UserSystem/js/jquery-1.9.1.js" type="text/javascript"></script>
+        <script src="UserSystem/js/jquery-ui-1.10.1.min.js" type="text/javascript"></script>
+        <script>
+            $('#calcular').click(function () {
+                var arrayCalcular = new Array();
+                arrayCalcular.push(-3);
+                arrayCalcular.push(7);
+                arrayCalcular.push(13);
+                arrayCalcular.push(8);
+                //obtengo el largo del arreglo
+                var largoArreglo = arrayCalcular.length;
+                //creo la variable de suma
+                var sumaArreglo = 0;
+                //calculo la suma de los valores
+                for(var i = 0; i < largoArreglo; i++){
+                    //efectuo la suma
+                    sumaArreglo = sumaArreglo + arrayCalcular[i];
+                }
+                //fin del for
+                //calculo la media
+                var mediaArreglo = sumaArreglo / largoArreglo;
+                
+                //creo el arreglo de difrencias
+                var valorDiferencias = 0;
+                //calculo las diferencias
+                for(var o = 0; o < largoArreglo; o++){
+                    //obtengo el valor de la diferencia y la elevo al cuadrado
+                    valorDiferencias = valorDiferencias + Math.pow( (arrayCalcular[o] - mediaArreglo), 2 );
+                }
+                //obtengo la varianza
+                var varianza = valorDiferencias/largoArreglo;
+                //obtengo la desviación estandar
+                var desviacionEstandar = Math.pow(varianza, 0.5);
+                alert(desviacionEstandar);
+                
+                
+                
+                
+                
+                
+                
+                
+            });
+        </script>
+    </body>
+</html>

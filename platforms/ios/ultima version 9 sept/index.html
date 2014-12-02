@@ -1,0 +1,2135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MASS</title>
+		<meta id="extViewportMeta" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="viewport" content="user-scalable=no, width=device-width, maximum-scale=1.0" />
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="format-detection" content="telephone=no">
+
+		<link name="MASS" rel="apple-touch-icon" href="touch-icon-iphone.png">
+
+		<link name="MASS" rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png">
+
+		<link name="MASS" rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png">
+
+		<link name="MASS" rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png">
+
+		<meta id="extViewportMeta" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="format-detection" content="telephone=no" />
+		<!-- For iPhone 4 with high-resolution Retina display: -->
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/icon.png">
+		<!-- For first-generation iPad: -->
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/icon.png">
+		<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+		<link rel="apple-touch-icon-precomposed" href="images/icon.png">
+		<!-- For nokia devices: -->
+		<link rel="shortcut icon" href="images/icon.png">
+
+		<link href="css/fidubogota.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="css/idangerous.swiper.css">
+		<link href="css/jquery.mobile-1.4.3.css" rel="stylesheet" type="text/css" />
+		<link href="css/fonts.css" rel="stylesheet" type="text/css" />
+		<link href="css/jquery-ui.css" rel="stylesheet" type="text/css" />
+
+		<script type="text/javascript" src="js/jquery-1.8.1.js"></script>
+		<script type="text/javascript" src="js/jquery.mobile-1.4.3.js"></script>
+		<script type="text/javascript" src="js/cuanto-debo-ahorrar.js"></script>
+		<script type="text/javascript" src="js/cuanto-debo-ahorrar-2.js"></script>
+		<script type="text/javascript" src="js/cuanto-debo-ahorrar-3.js"></script>
+
+		<script type="text/javascript" src="js/cuanto-debo-ahorrar-4.js"></script>
+		<script type="text/javascript" src="js/cuanto-debo-ahorrar-5.js"></script>
+		<script type="text/javascript" src="js/ahorro-mes.js"></script>
+		<script type="text/javascript" src="js/ahorro-mes-2.js"></script>
+		<script type="text/javascript" src="js/ahorro-mes-3.js"></script>
+
+		<script type="text/javascript" src="js/perfil-de-riesgo.js"></script>
+		<script type="text/javascript" src="js/perfil-de-riesgo2.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#datepicker").datepicker();
+			});
+
+			jQuery(function($) {
+				$.datepicker.regional['es'] = {
+					closeText : 'Cerrar',
+					prevText : '&#x3c;Ant',
+					nextText : 'Sig&#x3e;',
+					currentText : 'Hoy',
+					monthNames : ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+					monthNamesShort : ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
+					dayNames : ['Domingo', 'Lunes', 'Martes', 'Mi&eacute;rcoles', 'Jueves', 'Viernes', 'S&aacute;bado'],
+					dayNamesShort : ['Dom', 'Lun', 'Mar', 'Mi&eacute;', 'Juv', 'Vie', 'S&aacute;b'],
+					dayNamesMin : ['Do', 'Lu', 'Ma', 'Mi', 'Ju', 'Vi', 'S&aacute;'],
+					weekHeader : 'Sm',
+					dateFormat : 'dd/mm/yy',
+					firstDay : 1,
+					isRTL : false,
+					showMonthAfterYear : false,
+					yearSuffix : ''
+				};
+				$.datepicker.setDefaults($.datepicker.regional['es']);
+			});
+		</script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#datepicker2").datepicker();
+			});
+
+			jQuery(function($) {
+				$.datepicker.regional['es'] = {
+					closeText : 'Cerrar',
+					prevText : '&#x3c;Ant',
+					nextText : 'Sig&#x3e;',
+					currentText : 'Hoy',
+					monthNames : ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+					monthNamesShort : ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
+					dayNames : ['Domingo', 'Lunes', 'Martes', 'Mi&eacute;rcoles', 'Jueves', 'Viernes', 'S&aacute;bado'],
+					dayNamesShort : ['Dom', 'Lun', 'Mar', 'Mi&eacute;', 'Juv', 'Vie', 'S&aacute;b'],
+					dayNamesMin : ['Do', 'Lu', 'Ma', 'Mi', 'Ju', 'Vi', 'S&aacute;'],
+					weekHeader : 'Sm',
+					dateFormat : 'dd/mm/yy',
+					firstDay : 1,
+					isRTL : false,
+					showMonthAfterYear : false,
+					yearSuffix : ''
+				};
+				$.datepicker.setDefaults($.datepicker.regional['es']);
+			});
+		</script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				// hides the slickbox as soon as the DOM is ready
+				$('.pop').hide(1);
+				// shows the slickbox on clicking the noted link
+				$('.pregunta').click(function() {
+					$('#popup1').fadeIn('slow');
+					return false;
+				});
+				// shows the slickbox on clicking the noted link
+				$('#gr_bt1').click(function() {
+					$('#gr1').fadeIn('slow');
+					return false;
+				});
+				$('#gr_bt2').click(function() {
+					$('#gr2').fadeIn('slow');
+					return false;
+				});
+				$('#gr_bt3').click(function() {
+					$('#gr3').fadeIn('slow');
+					return false;
+				});
+				$('#gr_bt4').click(function() {
+					$('#gr4').fadeIn('slow');
+					return false;
+				});
+				$('#gr_bt5').click(function() {
+					$('#gr5').fadeIn('slow');
+					return false;
+				});
+				$('#ver1').click(function() {
+					$('#ver_box_1').fadeIn('slow');
+					return false;
+				});
+				$('#ver2').click(function() {
+					$('#ver_box_2').fadeIn('slow');
+					return false;
+				});
+				$('#gr_bt20').click(function() {
+					$('#gr20').fadeIn('slow');
+					return false;
+				});
+				$('#gr_bt22').click(function() {
+					$('#gr22').fadeIn('slow');
+					return false;
+				});
+				$('#gr_bt25').click(function() {
+					$('#gr25').fadeIn('slow');
+					return false;
+				});
+
+				// hides the slickbox on clicking the noted link
+				$('.close_popup').click(function() {
+					$(this).parent().fadeOut();
+					return false;
+				});
+
+			});
+		</script>
+<script src="js/idangerous.swiper-2.1.min.js"></script>    
+    <script src="js/jquery.excoloSlider.js"></script>
+    <link href="css/jquery.excoloSlider.css" rel="stylesheet" />
+    
+    <script>
+        // Settings for Adaptive.js
+        var ADAPT_CONFIG = {
+            path: 'css/',
+            dynamic: true,
+            range: [
+                '0px    to 760px  = mobile.min.css',
+                '760px  to 980px  = 720.min.css',
+                '980px            = 960.min.css'
+            ]
+        };
+
+    </script>
+    <script src="js/adapt.min.js"></script>
+    <script type="text/javascript">
+        SyntaxHighlighter.config.tagName = "code";
+    </script>
+
+
+    <script>
+        $(function () {
+            $("#sliderA").excoloSlider();
+            $("#sliderB").excoloSlider();
+        });
+    </script> 		
+
+	</head>
+
+	<body>
+		<!-- **********************  INDEX  **********************  -->
+		<div data-role="page" id="index">
+			<div class="content index_content">
+				<a href="#pg2" class="ingresar" data-transition="fade"></a>
+				<div class="footer" style="background-image:url(img/001.png)"></div>
+			</div>
+		</div>
+
+		<!-- **********************  pg 2  **********************  -->
+
+		<div data-role="page" id="pg2">
+			<div class="content pg2_content">
+
+				<table class="table_ico" width="90%" border="0" align="center" cellpadding="0" cellspacing="0">
+					<tr>
+						<td><a href="#pg3"><img src="img/056.png"></a></td>
+						<td><a href="#pg4"><img src="img/057.png"></a></td>
+						<td><a href="#pg25"><img src="img/058.png"></a></td>
+					</tr>
+				</table>
+				<table class="table_ico2" width="90%" border="0" align="center" cellpadding="0" cellspacing="0">
+					<tr>
+						<td><a href="#pg17a"><img src="img/062.png"></a></td>
+						<td><a href="#pg17"><img src="img/060.png"></a></td>
+						<td><a href="#pg20-24"><img src="img/061.png"></a></td>
+						<td><a href="#pg31"><img src="img/114.png"></a></td>
+					</tr>
+				</table>
+
+				<div class="footer" style="background-image:url(img/001.png)">
+					<a href="#index" class="link_footer" id="bt_home"></a>
+					<!--a href="#pg7" class="link_footer" id="bt_forward"></a>
+					<a href="#pg9" class="link_footer" id="bt_back"></a>-->
+
+				</div>
+			</div>
+		</div>
+
+		<!-- **********************  pg 2 OLD  **********************  -->
+		<!--
+		<div data-role="page" id="pg2">
+		<div class="content pg2_content">
+		<a href="#" id="ask" class="pregunta"></a>
+		<div class="device">
+		<a class="arrow-left" href="#"></a>
+		<a class="arrow-right" href="#"></a>
+		<div class="swiper-container">
+		<div class="swiper-wrapper">
+		<div class="swiper-slide"> <center><img src="img/028.png" class="txt_slide"></center> <img src="img/012.png" id="s1"> </div>
+		<div class="swiper-slide"> <center><img src="img/014.png" class="txt_slide"></center> <img src="img/015.png" id="s2"> </div>
+		<div class="swiper-slide"> <center><img src="img/017.png" class="txt_slide"></center> <img src="img/016.png" id="s3"> </div>
+		<div class="swiper-slide"> <center><img src="img/019.png" class="txt_slide"></center> <img src="img/018.png" id="s4"> </div>
+		<div class="swiper-slide"> <center><img src="img/020.png" class="txt_slide"></center> <img src="img/021.png" id="s5"> </div>
+		<div class="swiper-slide"> <center><img src="img/022.png" class="txt_slide"></center> <img src="img/023.png" id="s5"> </div>
+		</div>
+		</div>
+		<div class="pagination"></div>
+		</div>
+		<script src="js/jquery-1.10.1.min.js"></script>
+		<script src="js/idangerous.swiper-2.1.min.js"></script>
+		<script>
+		var mySwiper = new Swiper('.swiper-container',{
+		pagination: '.pagination',
+		loop:true,
+		grabCursor: true,
+		paginationClickable: true
+		})
+		$('.device .arrow-left').on('click', function(e){
+		e.preventDefault()
+		mySwiper.swipePrev()
+		})
+		$('.device .arrow-right').on('click', function(e){
+		e.preventDefault()
+		mySwiper.swipeNext()
+		})
+		</script>
+
+		<div class="footer">
+		<a href="#index" class="link_footer" id="bt_home"></a>
+		<a href="#index" class="link_footer" id="bt_forward"></a>
+		<a href="#pg3" class="link_footer" id="bt_back"></a>
+		</div>
+
+		<div class="pop" id="popup1">
+		<a href="#" class="close_popup"></a>
+		<img src="img/024.png" id="txt_1_pop">
+		</div>
+
+		</div>
+		</div>
+		-->
+
+		<!-- **********************  pg 3  **********************  -->
+		<div data-role="page" id="pg3">
+			<div class="content pg3_content">
+				<div class="logo1"></div>
+
+				<div class="footer">
+					<a href="#pg2" class="link_footer" id="bt_home"></a>
+					<a href="#pg3" class="link_footer active_link" id="bt_1"></a>
+					<a href="#pg4" class="link_footer" id="bt_2"></a>
+					<a href="#pg25" class="link_footer" id="bt_3"></a>
+					
+					<a href="#pg17a" class="link_footer" id="bt_6"></a>					
+					<a href="#pg17" class="link_footer" id="bt_4"></a>
+					<a href="#pg20-24" class="link_footer" id="bt_5"></a>
+					<a href="#pg31" class="link_footer" id="bt_7"></a>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- **********************  pg 4  **********************  -->
+		<div data-role="page" id="pg4">
+			<div class="content pg4_content">
+				<div class="logo1"></div>
+				<div class="footer">
+					<a href="#pg2" class="link_footer" id="bt_home"></a>
+					<!--a href="#pg3" class="link_footer" id="bt_forward"></a>
+					<a href="#pg5" class="link_footer" id="bt_back"></a-->
+					<a href="#pg3" class="link_footer" id="bt_1"></a>
+					<a href="#pg4" class="link_footer active_link" id="bt_2"></a>
+					<a href="#pg25" class="link_footer" id="bt_3"></a>
+					
+					<a href="#pg17a" class="link_footer" id="bt_6"></a>					
+					<a href="#pg17" class="link_footer" id="bt_4"></a>
+					<a href="#pg20-24" class="link_footer" id="bt_5"></a>
+					<a href="#pg31" class="link_footer" id="bt_7"></a>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- **********************  pg 5 PR **********************  -->
+		<div data-role="page" id="pg5">
+			<div class="content pg5_content relative">
+
+				<div class="list_radio">
+					<h2>¿En qué rango de edad se encuentra?</h2>
+					<div class="ui-controlgroup-controls">
+						<div class="ui-radio act_qt">
+							<label for="radio-choice-1" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-on ui-first-child">Menor de 28 años</label>
+							<input type="radio" name="radio-choice-1" id="radio-choice-1" value="15">
+						</div>
+						<div class="ui-radio act_qt">
+							<label for="radio-choice-2" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-off">Entre 29 y 35 años</label>
+							<input type="radio" name="radio-choice-1" id="radio-choice-2" value="12">
+						</div>
+						<div class="ui-radio act_qt">
+							<label for="radio-choice-3" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-off">Entre 36 y 50 años</label>
+							<input type="radio" name="radio-choice-1" id="radio-choice-3" value="9">
+						</div>
+						<div class="ui-radio act_qt">
+							<label for="radio-choice-4" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-off">Entre 51 y 60 años</label>
+							<input type="radio" name="radio-choice-1" id="radio-choice-4" value="6">
+						</div>
+						<div class="ui-radio act_qt">
+							<label for="radio-choice-5" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-off ui-last-child">Mayores de 60 años</label>
+							<input type="radio" name="radio-choice-1" id="radio-choice-5" value="3">
+						</div>
+					</div>
+				</div>
+
+				<div class="contador">
+					<span>1</span>
+					<div>
+						/5
+					</div>
+				</div>
+
+				<div class="footer">
+					<a href="#pg2" class="link_footer" id="bt_home"></a>
+					<!--a href="#pg3" class="link_footer" id="bt_forward"></a>
+					<a href="#pg5" class="link_footer" id="bt_back"></a-->
+					<a href="#pg3" class="link_footer" id="bt_1"></a>
+					<a href="#pg4" class="link_footer " id="bt_2"></a>
+					<a href="#pg25" class="link_footer active_link" id="bt_3"></a>
+					<a href="#pg17a" class="link_footer" id="bt_6"></a>					
+					<a href="#pg17" class="link_footer" id="bt_4"></a>
+					<a href="#pg20-24" class="link_footer" id="bt_5"></a>
+					<a href="#pg31" class="link_footer" id="bt_7"></a>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- **********************  pg 6 PR **********************  -->
+		<div data-role="page" id="pg6">
+			<div class="content pg5_content relative">
+
+				<div class="list_radio">
+					<h3>Según su objetivo de inversión, usted espera mantener sus recursos en la alternativa que le ofrezca Fiduciaria Bogotá por un periodo:</h3>
+					<div class="ui-controlgroup-controls">
+						<div class="ui-radio act_qt">
+							<label for="radio-choice-6" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-on ui-first-child">Menor a 6 meses</label>
+							<input type="radio" name="radio-choice-2" id="radio-choice-6" value="4">
+						</div>
+						<div class="ui-radio act_qt">
+							<label for="radio-choice-7" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-off">Entre 6 meses y 1 año</label>
+							<input type="radio" name="radio-choice-2" id="radio-choice-7" value="8">
+						</div>
+						<div class="ui-radio act_qt">
+							<label for="radio-choice-8" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-off">Entre 1 y 2 años</label>
+							<input type="radio" name="radio-choice-2" id="radio-choice-8" value="12">
+						</div>
+						<div class="ui-radio act_qt">
+							<label for="radio-choice-9" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-off">Entre 2 y 4 años</label>
+							<input type="radio" name="radio-choice-2" id="radio-choice-9" value="16">
+						</div>
+						<div class="ui-radio act_qt">
+							<label for="radio-choice-10" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-off ui-last-child">Mayor a 4 años</label>
+							<input type="radio" name="radio-choice-2" id="radio-choice-10" value="20">
+						</div>
+					</div>
+				</div>
+
+				<div class="contador">
+					<span>2</span>
+					<div>
+						/5
+					</div>
+				</div>
+
+				<div class="footer">
+					<a href="#pg2" class="link_footer" id="bt_home"></a>
+
+					<a href="#pg5" class="link_footer" id="bt_forward"></a>
+					<!--a href="#pg3" class="link_footer" id="bt_forward"></a>
+					<a href="#pg5" class="link_footer" id="bt_back"></a-->
+					<a href="#pg3" class="link_footer" id="bt_1"></a>
+					<a href="#pg4" class="link_footer " id="bt_2"></a>
+					<a href="#pg25" class="link_footer active_link" id="bt_3"></a>
+					<a href="#pg17a" class="link_footer" id="bt_6"></a>					
+					<a href="#pg17" class="link_footer" id="bt_4"></a>
+					<a href="#pg20-24" class="link_footer" id="bt_5"></a>
+					<a href="#pg31" class="link_footer " id="bt_7"></a>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- **********************  pg 7 PR **********************  -->
+		<div data-role="page" id="pg7">
+			<div class="content pg5_content relative">
+
+				<div class="list_radio">
+					<h3>Excluyendo su casa, ¿la inversión que tiene y/o tendrá en Fiduciaria Bogotá qué porcentaje representa de sus inversiones?</h3>
+					<div class="ui-controlgroup-controls">
+						<div class="ui-radio act_qt">
+							<label for="radio-choice-11" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-on ui-first-child">Menos del 20%</label>
+							<input type="radio" name="radio-choice-3" id="radio-choice-11" value="15">
+						</div>
+						<div class="ui-radio act_qt">
+							<label for="radio-choice-12" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-off">Entre 20% y 40%</label>
+							<input type="radio" name="radio-choice-3" id="radio-choice-12" value="12">
+						</div>
+						<div class="ui-radio act_qt">
+							<label for="radio-choice-13" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-off">Entre 40% y 60%</label>
+							<input type="radio" name="radio-choice-3" id="radio-choice-13" value="9">
+						</div>
+						<div class="ui-radio act_qt">
+							<label for="radio-choice-14" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-off">Entre 60% y 80%</label>
+							<input type="radio" name="radio-choice-3" id="radio-choice-14" value="6">
+						</div>
+						<div class="ui-radio act_qt">
+							<label for="radio-choice-15" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-off ui-last-child">Más del 80%</label>
+							<input type="radio" name="radio-choice-3" id="radio-choice-15" value="3">
+						</div>
+					</div>
+				</div>
+
+				<div class="contador">
+					<span>3</span>
+					<div>
+						/5
+					</div>
+				</div>
+
+				<div class="footer">
+					<a href="#pg2" class="link_footer" id="bt_home"></a>
+
+					<a href="#pg6" class="link_footer" id="bt_forward"></a>
+					<!--a href="#pg3" class="link_footer" id="bt_forward"></a>
+					<a href="#pg5" class="link_footer" id="bt_back"></a-->
+					<a href="#pg3" class="link_footer" id="bt_1"></a>
+					<a href="#pg4" class="link_footer " id="bt_2"></a>
+					<a href="#pg25" class="link_footer active_link" id="bt_3"></a>
+					<a href="#pg17a" class="link_footer" id="bt_6"></a>					
+					<a href="#pg17" class="link_footer" id="bt_4"></a>
+					<a href="#pg20-24" class="link_footer" id="bt_5"></a>
+					<a href="#pg31" class="link_footer " id="bt_7"></a>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- **********************  pg 8 PR **********************  -->
+		<div data-role="page" id="pg8">
+			<div class="content pg5_content relative">
+
+				<div class="list_radio">
+					<h3>Respecto al objetivo de sus inversiones, con cuál de las siguientes personas se identifica más:</h3>
+					<div class="ui-controlgroup-controls">
+						<div class="ui-radio act_qt">
+							<label for="radio-choice-16" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-on ui-first-child">Busca una rentabilidad estable, así sea menor que la de otras alternativas de inversión. Su objetivo prioritario.</label>
+							<input type="radio" name="radio-choice-4" id="radio-choice-16" value="7">
+						</div>
+						<div class="ui-radio act_qt">
+							<label for="radio-choice-17" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-off">Busca una rentabilidad estable, pero puede tolerar movimientos de mercado que permitan pequeñas variaciones en los rendimientos de su inversión.</label>
+							<input type="radio" name="radio-choice-4" id="radio-choice-17" value="14">
+						</div>
+						<div class="ui-radio act_qt">
+							<label for="radio-choice-18" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-off">Busca una buena rentabilidad y un ingreso sobre sus inversiones pero es consciente que el riesgo de pérdida en las mismas se incrementa</label>
+							<input type="radio" name="radio-choice-4" id="radio-choice-18" value="21">
+						</div>
+						<div class="ui-radio act_qt">
+							<label for="radio-choice-19" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-off">Es una persona cuya tolerancia al riesgo es alta, busca rentabilidades mayores de largo plazo y admite cambios significativos en su inversión.</label>
+							<input type="radio" name="radio-choice-4" id="radio-choice-19" value="28">
+						</div>
+						<div class="ui-radio act_qt">
+							<label for="radio-choice-20" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-off ui-last-child">Busca maximizar la rentabilidad, su objetivo principal es el crecimiento de su capital, teniendo en cuenta que el riesgo de pérdida en las inversiones prodria ser muy alto.</label>
+							<input type="radio" name="radio-choice-4" id="radio-choice-20" value="35">
+						</div>
+					</div>
+				</div>
+
+				<div class="contador" style="margin-top:10px">
+					<span>4</span>
+					<div>
+						/5
+					</div>
+				</div>
+
+				<div class="footer">
+					<a href="#pg2" class="link_footer" id="bt_home"></a>
+
+					<a href="#pg7" class="link_footer" id="bt_forward"></a>
+					<!--a href="#pg3" class="link_footer" id="bt_forward"></a>
+					<a href="#pg5" class="link_footer" id="bt_back"></a-->
+					<a href="#pg3" class="link_footer" id="bt_1"></a>
+					<a href="#pg4" class="link_footer " id="bt_2"></a>
+					<a href="#pg25" class="link_footer active_link" id="bt_3"></a>
+					<a href="#pg17a" class="link_footer" id="bt_6"></a>			
+					<a href="#pg17" class="link_footer" id="bt_4"></a>
+					<a href="#pg20-24" class="link_footer" id="bt_5"></a>
+					<a href="#pg31" class="link_footer " id="bt_7"></a>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- **********************  pg 9 PR **********************  -->
+		<div data-role="page" id="pg9">
+			<div class="content pg5_content relative">
+
+				<div class="list_radio">
+					<h3> ¿Invertiría usted en un portafolio que presentara pérdidas en un periodo y utilidades en otro?</h3>
+					<div class="ui-controlgroup-controls">
+						<div class="ui-radio act_qt">
+							<label for="radio-choice-21" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-on ui-first-child">Totalmente en desacuerdo</label>
+							<input type="radio" name="radio-choice-5" id="radio-choice-21" value="3">
+						</div>
+						<div class="ui-radio act_qt">
+							<label for="radio-choice-22" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-off">En desacuerdo</label>
+							<input type="radio" name="radio-choice-5" id="radio-choice-22" value="6">
+						</div>
+						<div class="ui-radio act_qt">
+							<label for="radio-choice-23" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-off">Indiferente</label>
+							<input type="radio" name="radio-choice-5" id="radio-choice-23" value="9">
+						</div>
+						<div class="ui-radio act_qt">
+							<label for="radio-choice-24" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-off">De acuerdo</label>
+							<input type="radio" name="radio-choice-5" id="radio-choice-24" value="12">
+						</div>
+						<div class="ui-radio act_qt">
+							<label for="radio-choice-25" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-off ui-last-child">Totalmente de acuerdo</label>
+							<input type="radio" name="radio-choice-5" id="radio-choice-25" value="15">
+						</div>
+					</div>
+				</div>
+
+				<div class="contador">
+					<span>5</span>
+					<div>
+						/5
+					</div>
+				</div>
+
+				<div class="footer">
+					<a href="#pg2" class="link_footer" id="bt_home"></a>
+
+					<a href="#pg8" class="link_footer" id="bt_forward"></a>
+					<!--a href="#pg3" class="link_footer" id="bt_forward"></a>
+					<a href="#pg5" class="link_footer" id="bt_back"></a-->
+					<a href="#pg3" class="link_footer" id="bt_1"></a>
+					<a href="#pg4" class="link_footer " id="bt_2"></a>
+					<a href="#pg25" class="link_footer active_link" id="bt_3"></a>
+					<a href="#pg17a" class="link_footer" id="bt_6"></a>			
+					<a href="#pg17" class="link_footer" id="bt_4"></a>
+					<a href="#pg20-24" class="link_footer" id="bt_5"></a>
+					<a href="#pg31" class="link_footer " id="bt_7"></a>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- **********************  pg 26 PR **********************  -->
+		<div data-role="page" id="pg26">
+			<div class="content pg5_content relative">
+
+				<div class="list_radio">
+					<h2>La inversión a realizar en Fiduciaria Bogotá corresponde únicamente a excedentes de liquidez</h2>
+					<div class="ui-controlgroup-controls">
+						<div class="ui-radio act_qt">
+							<label for="radio-choice-26" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-on ui-first-child">Totalmente en desacuerdo</label>
+							<input type="radio" name="radio-choice-6" id="radio-choice-26" value="3">
+						</div>
+						<div class="ui-radio act_qt">
+							<label for="radio-choice-27" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-off">En desacuerdo</label>
+							<input type="radio" name="radio-choice-6" id="radio-choice-27" value="6">
+						</div>
+						<div class="ui-radio act_qt">
+							<label for="radio-choice-28" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-off">Indiferente</label>
+							<input type="radio" name="radio-choice-6" id="radio-choice-28" value="9">
+						</div>
+						<div class="ui-radio act_qt">
+							<label for="radio-choice-29" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-off">De acuerdo</label>
+							<input type="radio" name="radio-choice-6" id="radio-choice-29" value="12">
+						</div>
+						<div class="ui-radio act_qt">
+							<label for="radio-choice-30" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-off ui-last-child">Totalmente de acuerdo</label>
+							<input type="radio" name="radio-choice-6" id="radio-choice-30" value="15">
+						</div>
+					</div>
+				</div>
+
+				<div class="contador">
+					<span>1</span>
+					<div>
+						/5
+					</div>
+				</div>
+
+				<div class="footer">
+					<a href="#pg2" class="link_footer" id="bt_home"></a>
+					<!--a href="#pg3" class="link_footer" id="bt_forward"></a>
+					<a href="#pg5" class="link_footer" id="bt_back"></a-->
+					<a href="#pg3" class="link_footer" id="bt_1"></a>
+					<a href="#pg4" class="link_footer " id="bt_2"></a>
+					<a href="#pg25" class="link_footer active_link" id="bt_3"></a>
+					<a href="#pg17a" class="link_footer" id="bt_6"></a>					
+					<a href="#pg17" class="link_footer" id="bt_4"></a>
+					<a href="#pg20-24" class="link_footer" id="bt_5"></a>
+					<a href="#pg31" class="link_footer" id="bt_7"></a>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- **********************  pg 27 PR **********************  -->
+		<div data-role="page" id="pg27">
+			<div class="content pg5_content relative">
+
+				<div class="list_radio">
+					<h3>Según el objetivo de inversión y los requerimientos de liquidez, la compañía espera mantener los recursos en la alternativa que le ofrezca Fiduciaria Bogotá por un periodo:</h3>
+					<div class="ui-controlgroup-controls">
+						<div class="ui-radio act_qt">
+							<label for="radio-choice-31" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-on ui-first-child">Menor a 6 meses</label>
+							<input type="radio" name="radio-choice-7" id="radio-choice-31" value="4">
+						</div>
+						<div class="ui-radio act_qt">
+							<label for="radio-choice-32" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-off">Entre 6 meses y 1 año</label>
+							<input type="radio" name="radio-choice-7" id="radio-choice-32" value="8">
+						</div>
+						<div class="ui-radio act_qt">
+							<label for="radio-choice-33" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-off">Entre 1 y 2 años</label>
+							<input type="radio" name="radio-choice-7" id="radio-choice-33" value="12">
+						</div>
+						<div class="ui-radio act_qt">
+							<label for="radio-choice-34" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-off">Entre 2 y 4 años</label>
+							<input type="radio" name="radio-choice-7" id="radio-choice-34" value="16">
+						</div>
+						<div class="ui-radio act_qt">
+							<label for="radio-choice-35" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-off ui-last-child">Mayor a 4 años</label>
+							<input type="radio" name="radio-choice-7" id="radio-choice-35" value="20">
+						</div>
+					</div>
+				</div>
+
+				<div class="contador">
+					<span>2</span>
+					<div>
+						/5
+					</div>
+				</div>
+
+				<div class="footer">
+					<a href="#pg2" class="link_footer" id="bt_home"></a>
+
+					<a href="#pg26" class="link_footer" id="bt_forward"></a>
+					<!--a href="#pg3" class="link_footer" id="bt_forward"></a>
+					<a href="#pg5" class="link_footer" id="bt_back"></a-->
+					<a href="#pg3" class="link_footer" id="bt_1"></a>
+					<a href="#pg4" class="link_footer " id="bt_2"></a>
+					<a href="#pg25" class="link_footer active_link" id="bt_3"></a>
+					<a href="#pg17a" class="link_footer" id="bt_6"></a>					
+					<a href="#pg17" class="link_footer" id="bt_4"></a>
+					<a href="#pg20-24" class="link_footer" id="bt_5"></a>
+					<a href="#pg31" class="link_footer " id="bt_7"></a>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- **********************  pg 28 PR **********************  -->
+		<div data-role="page" id="pg28">
+			<div class="content pg5_content relative">
+
+				<div class="list_radio">
+					<h3>¿Qué porcentaje del patrimonio de la compañía está pensando en invertir en Fiduciaria Bogotá?</h3>
+					<div class="ui-controlgroup-controls">
+						<div class="ui-radio act_qt">
+							<label for="radio-choice-36" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-on ui-first-child">Menos del 20%</label>
+							<input type="radio" name="radio-choice-8" id="radio-choice-36" value="15">
+						</div>
+						<div class="ui-radio act_qt">
+							<label for="radio-choice-37" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-off">Entre 20% y 40%</label>
+							<input type="radio" name="radio-choice-8" id="radio-choice-37" value="12">
+						</div>
+						<div class="ui-radio act_qt">
+							<label for="radio-choice-38" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-off">Entre 40% y 60%</label>
+							<input type="radio" name="radio-choice-8" id="radio-choice-38" value="9">
+						</div>
+						<div class="ui-radio act_qt">
+							<label for="radio-choice-39" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-off">Entre 60% y 80%</label>
+							<input type="radio" name="radio-choice-8" id="radio-choice-39" value="6">
+						</div>
+						<div class="ui-radio act_qt">
+							<label for="radio-choice-40" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-off ui-last-child">Más del 80%</label>
+							<input type="radio" name="radio-choice-8" id="radio-choice-40" value="3">
+						</div>
+					</div>
+				</div>
+
+				<div class="contador">
+					<span>3</span>
+					<div>
+						/5
+					</div>
+				</div>
+
+				<div class="footer">
+					<a href="#pg2" class="link_footer" id="bt_home"></a>
+
+					<a href="#pg27" class="link_footer" id="bt_forward"></a>
+					<!--a href="#pg3" class="link_footer" id="bt_forward"></a>
+					<a href="#pg5" class="link_footer" id="bt_back"></a-->
+					<a href="#pg3" class="link_footer" id="bt_1"></a>
+					<a href="#pg4" class="link_footer " id="bt_2"></a>
+					<a href="#pg25" class="link_footer active_link" id="bt_3"></a>
+					<a href="#pg17a" class="link_footer" id="bt_6"></a>					
+					<a href="#pg17" class="link_footer" id="bt_4"></a>
+					<a href="#pg20-24" class="link_footer" id="bt_5"></a>
+					<a href="#pg31" class="link_footer" id="bt_7"></a>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- **********************  pg 29 PR **********************  -->
+		<div data-role="page" id="pg29">
+			<div class="content pg5_content relative">
+
+				<div class="list_radio">
+					<h3> Cuál es el objetivo de la compañía al invertir los recursos en la Fiduciaria</h3>
+					<div class="ui-controlgroup-controls">
+						<div class="ui-radio act_qt">
+							<label for="radio-choice-41" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-on ui-first-child">Obtener una rentabilidad estable, así sea menor que la de otras alternativas de inversión. Su objetivo prioritario es la preservacion del capital invertido.</label>
+							<input type="radio" name="radio-choice-9" id="radio-choice-41" value="7">
+						</div>
+						<div class="ui-radio act_qt">
+							<label for="radio-choice-42" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-off">Obtener una rentabilidad estable, pero puede tolerar movimientos de mercado que permitan pequeñas variaciones en los redimientos de su inversión.</label>
+							<input type="radio" name="radio-choice-9" id="radio-choice-42" value="14">
+						</div>
+						<div class="ui-radio act_qt">
+							<label for="radio-choice-43" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-off">Obtener una buena rentabilidad, y un ingreso sobre sus inversiones, pero es consciente que el riesgo de pérdida en las mismas se incrementa.</label>
+							<input type="radio" name="radio-choice-9" id="radio-choice-43" value="21">
+						</div>
+						<div class="ui-radio act_qt">
+							<label for="radio-choice-44" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-off">Obtener rentabilidades mayores de largo plazo y  admitiendo  cambios significativos en su inversión y teniendo una tolerancia alta al riesgo.</label>
+							<input type="radio" name="radio-choice-9" id="radio-choice-44" value="28">
+						</div>
+						<div class="ui-radio act_qt">
+							<label for="radio-choice-45" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-off ui-last-child">Obtener rentabilidad altas  teniendo en cuenta que el riesgo de pérdida en las inversiones podría ser muy alto y se podrían dar pérdidas importantes de capital.</label>
+							<input type="radio" name="radio-choice-9" id="radio-choice-45" value="35">
+						</div>
+					</div>
+				</div>
+
+				<div class="contador" style="margin-top:10px">
+					<span>4</span>
+					<div>
+						/5
+					</div>
+				</div>
+
+				<div class="footer">
+					<a href="#pg2" class="link_footer" id="bt_home"></a>
+
+					<a href="#pg28" class="link_footer" id="bt_forward"></a>
+					<!--a href="#pg3" class="link_footer" id="bt_forward"></a>
+					<a href="#pg5" class="link_footer" id="bt_back"></a-->
+					<a href="#pg3" class="link_footer" id="bt_1"></a>
+					<a href="#pg4" class="link_footer " id="bt_2"></a>
+					<a href="#pg25" class="link_footer active_link" id="bt_3"></a>
+					<a href="#pg17a" class="link_footer" id="bt_6"></a>					
+					<a href="#pg17" class="link_footer" id="bt_4"></a>
+					<a href="#pg20-24" class="link_footer" id="bt_5"></a>
+					<a href="#pg31" class="link_footer " id="bt_7"></a>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- **********************  pg 30 PR **********************  -->
+		<div data-role="page" id="pg30">
+			<div class="content pg5_content relative">
+
+				<div class="list_radio">
+					<h3> ¿Aceptaría que las inversiones de la Compañía en Fiduciaria Bogotá presentarán pérdidas en un periodo y utilidades en otro?</h3>
+					<div class="ui-controlgroup-controls">
+						<div class="ui-radio act_qt">
+							<label for="radio-choice-46" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-on ui-first-child">Totalmente en desacuerdo</label>
+							<input type="radio" name="radio-choice-10" id="radio-choice-46" value="3">
+						</div>
+						<div class="ui-radio act_qt">
+							<label for="radio-choice-47" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-off">En desacuerdo</label>
+							<input type="radio" name="radio-choice-10" id="radio-choice-47" value="6">
+						</div>
+						<div class="ui-radio act_qt">
+							<label for="radio-choice-48" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-off">Indiferente</label>
+							<input type="radio" name="radio-choice-10" id="radio-choice-48" value="9">
+						</div>
+						<div class="ui-radio act_qt">
+							<label for="radio-choice-49" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-off">De acuerdo</label>
+							<input type="radio" name="radio-choice-10" id="radio-choice-49" value="12">
+						</div>
+						<div class="ui-radio act_qt">
+							<label for="radio-choice-50" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-off ui-last-child">Totalmente de acuerdo</label>
+							<input type="radio" name="radio-choice-10" id="radio-choice-50" value="15">
+						</div>
+					</div>
+				</div>
+
+				<div class="contador">
+					<span>5</span>
+					<div>
+						/5
+					</div>
+				</div>
+
+				<div class="footer">
+					<a href="#pg2" class="link_footer" id="bt_home"></a>
+
+					<a href="#pg29" class="link_footer" id="bt_forward"></a>
+					<!--a href="#pg3" class="link_footer" id="bt_forward"></a>
+					<a href="#pg5" class="link_footer" id="bt_back"></a-->
+					<a href="#pg3" class="link_footer" id="bt_1"></a>
+					<a href="#pg4" class="link_footer " id="bt_2"></a>
+					<a href="#pg25" class="link_footer active_link" id="bt_3"></a>
+					<a href="#pg17a" class="link_footer" id="bt_6"></a>
+					<a href="#pg17" class="link_footer" id="bt_4"></a>
+					<a href="#pg20-24" class="link_footer" id="bt_5"></a>
+					<a href="#pg31" class="link_footer " id="bt_7"></a>
+
+				</div>
+			</div>
+		</div>
+		<!-- **********************  pg 10 A RIESGO BAJO **********************  -->
+		<div data-role="page" id="pg10a">
+			<div class="content pg10a_content relative">
+				<div class="logo1"></div>
+
+				<div class="footer">
+					<a href="#pg2" class="link_footer" id="bt_home"></a>
+					<a href="#pg10" class="link_footer" id="bt_forward"></a>
+					<!--a href="#pg9" class="link_footer" id="bt_forward"></a>
+					<a href="#pg11" class="link_footer" id="bt_back"></a-->
+
+					<a href="#pg3" class="link_footer " id="bt_1"></a>
+					<a href="#pg4" class="link_footer" id="bt_2"></a>					
+					<a href="#pg25" class="link_footer active_link" id="bt_3"></a>
+					<a href="#pg17a" class="link_footer" id="bt_6"></a>					
+					<a href="#pg17" class="link_footer" id="bt_4"></a>
+					<a href="#pg20-24" class="link_footer" id="bt_5"></a>
+					<a href="#pg31" class="link_footer" id="bt_7"></a>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- **********************  pg 10 RIESGO BAJO  ***** INDEX  **********************  -->
+		<div data-role="page" id="pg10">
+			<div class="content pg10_content relative">
+				<div class="logo1"></div>
+
+				<div class="botones_riesgo">
+					<a href="#pg11" id="sumar"><img src="img/010.png" width="300"></a>
+					<a href="#pg12" id="fidugob"><img src="img/011.png" width="300"></a>
+					<a href="#pg10a" id="fidugob"><img src="img/105.png" width="300"></a>
+				</div>
+
+				<div class="footer">
+					<a href="#pg2" class="link_footer" id="bt_home"></a>
+					<!--a href="#pg9" class="link_footer" id="bt_forward"></a>
+					<a href="#pg11" class="link_footer" id="bt_back"></a-->
+
+					<a href="#pg3" class="link_footer " id="bt_1"></a>
+					<a href="#pg4" class="link_footer" id="bt_2"></a>
+					<a href="#pg25" class="link_footer active_link" id="bt_3"></a>
+					<a href="#pg17a" class="link_footer" id="bt_6"></a>					
+					<a href="#pg17" class="link_footer" id="bt_4"></a>
+					<a href="#pg20-24" class="link_footer" id="bt_5"></a>
+					<a href="#pg31" class="link_footer" id="bt_7"></a>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- **********************  pg 11 RIESGO BAJO **********************  -->
+		<div data-role="page" id="pg11">
+			<div class="content pg11_content relative">
+				<div class="logo1"></div>
+
+				<div class="textos_bogota">
+					<h2>PLAZO</h2>
+					<p>
+						A la Vista
+					</p>
+
+					<h2>OBJETIVO INVERSIÓN</h2>
+					<p>
+						Perfil de RIESGO BAJO para un inversionista conservador, tendiente a la conservación de capital y a la obtención de rentabilidad
+					</p>
+
+					<h2>PORTAFOLIO DE INVERSIÓN</h2>
+					<p>
+						Valores inscritos en el Registro Nacional de Valores y Emisores, Valores y bonos emitidos por entidades multilaterales de crédito o entidades públicas
+					</p>
+
+					<h2>BENEFICIO</h2>
+					<ul style="margin:0px; padding:0px; margin-left:20px;">
+								<li>
+									 Disponibilidad de tu dinero cuando lo necesitas
+								</li>
+								<li>
+									Portal transaccional sin costo para consultas, movimientos, extractos, inscripción de cuentas bancarias propias o de terceros para traslados sin costo. 
+								</li>
+
+								<li>
+									 1 Cheque de gerencia sin costo para retiros superiores a $500.000. 
+								</li>
+
+								<li>
+									Consignación nacional sin costo.
+								</li>
+
+								<li>
+									 Capitalización diaria de rendimientos.
+								</li>
+					</ul>
+				</div>
+
+
+				<div class="botones_simulador">
+					<a href="#pg17"><img src="img/034.png"></a>
+					<!--a href="#gr1" id="gr_bt1"><img src="img/123.png"></a-->
+				</div>
+				<div class="footer">
+					<a href="#pg2" class="link_footer" id="bt_home"></a>
+					<a href="#pg10" class="link_footer" id="bt_forward"></a>
+					<!--a href="" class="link_footer" id="bt_back"></a-->
+
+					<a href="#pg3" class="link_footer " id="bt_1"></a>
+					<a href="#pg4" class="link_footer" id="bt_2"></a>
+					<a href="#pg25" class="link_footer active_link" id="bt_3"></a>
+					<a href="#pg17a" class="link_footer" id="bt_6"></a>				
+					<a href="#pg17" class="link_footer" id="bt_4"></a>
+					<a href="#pg20-24" class="link_footer" id="bt_5"></a>
+					<a href="#pg31" class="link_footer" id="bt_7"></a>
+				</div>
+			</div>
+		</div>
+
+		<!-- **********************  pg 12 RIESGO BAJO **********************  -->
+		<div data-role="page" id="pg12">
+			<div class="content pg12_content relative">
+				<div class="logo1"></div>
+
+				<div class="textos_bogota">
+					<h2>PLAZO</h2>
+					<p>
+						A la Vista
+					</p>
+
+					<h2>OBJETIVO INVERSIÓN</h2>
+					<p>
+						Alternativa de Inversión con
+						perfil de RIESGO BAJO
+						para un inversionista
+						conservador, tendiente a la
+						conservación de capital y a la
+						obtención de rentabilidad de
+						acuerdo con las condiciones
+						del mercado.
+					</p>
+
+					<h2>PORTAFOLIO DE INVERSIÓN</h2>
+					<p>
+						Títulos de Tesorería TES: clase B,
+						tasa fija o indexados a la UVR, del
+						merado primario directamente ante
+						la Dirección General de Crédito
+						Público y del Tesoro Nacional
+						(DGCPTN) o en el mercado
+						secundario o certificados de
+						depósito a término en condiciones
+						de mercado en establecimientos
+						bancarios vigilados por la
+						Superfinanciera de Colombia, o en
+						entidades con regímenes especiales
+						contempladas en la parte décima
+						del estatuto orgánico del sistema
+						financiero.
+					</p>
+
+					<h2>BENEFICIO</h2>
+					<ul style="margin:0px; padding:0px; margin-left:20px;">
+								<li>
+									 Disponibilidad de tu dinero cuando lo necesitas
+								</li>
+								<li>
+									Portal transaccional sin costo para consultas, movimientos, extractos, inscripción de cuentas bancarias propias o de terceros para traslados sin costo. 
+								</li>
+
+								<li>
+									 1 Cheque de gerencia sin costo para retiros superiores a $500.000. 
+								</li>
+
+								<li>
+									Consignación nacional sin costo.
+								</li>
+
+								<li>
+									 Capitalización diaria de rendimientos.
+								</li>
+					</ul>
+				</div>
+
+
+				<div class="botones_simulador">
+					<a href="#pg17"><img src="img/034.png"></a>
+					<!-- a href="#gr2" id="gr_bt2"><img src="img/123.png"></a -->
+				</div>
+				<div class="footer">
+					<a href="#pg2" class="link_footer" id="bt_home"></a>
+					<a href="#pg10" class="link_footer" id="bt_forward"></a>
+					<!--a href="#pg17" class="link_footer" id="bt_back"></a-->
+
+					<a href="#pg3" class="link_footer " id="bt_1"></a>
+					<a href="#pg4" class="link_footer" id="bt_2"></a>
+					<a href="#pg25" class="link_footer active_link" id="bt_3"></a>
+					<a href="#pg17a" class="link_footer" id="bt_6"></a>
+					<a href="#pg17" class="link_footer" id="bt_4"></a>
+					<a href="#pg20-24" class="link_footer" id="bt_5"></a>
+					<a href="#pg31" class="link_footer" id="bt_7"></a>
+				</div>
+			</div>
+		</div>
+
+		<!-- **********************  pg 13 A RIESGO MODERADO ***** INDEX **********************  -->
+		<div data-role="page" id="pg13a">
+			<div class="content pg13a_content relative">
+				<div class="logo1"></div>
+
+				<div class="botones_riesgo">
+					<a href="#pg13" style="margin-left:150px"><img src="img/109.png" width="300"></a>
+					<a href="#pg13b"><img src="img/124.png" width="300"></a>
+				</div>
+
+				<div class="footer">
+					<a href="#pg2" class="link_footer" id="bt_home"></a>
+					<!--a href="#pg9" class="link_footer" id="bt_forward"></a>
+					<a href="#pg17" class="link_footer" id="bt_back"></a-->
+
+					<a href="#pg3" class="link_footer " id="bt_1"></a>
+					<a href="#pg4" class="link_footer" id="bt_2"></a>
+					<a href="#pg25" class="link_footer active_link" id="bt_3"></a>
+					<a href="#pg17a" class="link_footer" id="bt_6"></a>					
+					<a href="#pg17" class="link_footer" id="bt_4"></a>
+					<a href="#pg20-24" class="link_footer" id="bt_5"></a>
+					<a href="#pg31" class="link_footer" id="bt_7"></a>
+				</div>
+			</div>
+		</div>
+
+		<!-- **********************  pg 13 RIESGO MODERADO **********************  -->
+		<div data-role="page" id="pg13">
+			<div class="content pg13_content relative">
+				<div class="logo1"></div>
+				<div class="textos_bogota">
+					<h2>PLAZO</h2>
+					<p>
+						90 días
+					</p>
+
+					<h2>OBJETIVO INVERSIÓN</h2>
+					<p>
+						Alternativa de inversión  con
+						perfil de RIESGO
+						MODERADO para un
+						inversionista conservador
+						tendiente a la conservación
+						del capital y obtención de
+						rentabilidad
+					</p>
+
+					<h2>PORTAFOLIO DE INVERSIÓN</h2>
+					<p>
+						Valores inscritos en el Registro
+						Nacional de Valores y Emisores,
+						emitidos o garantizados por la
+						Nación, el Banco de la República y
+						de FOGAFIN. Así como aquellos
+						bonos emitidos por el Gobierno
+						Nacional que hacen parte de la
+						deuda externa
+					</p>
+
+					<h2>BENEFICIO</h2>
+					<ul style="margin:0px; padding:0px; margin-left:20px;">
+						<li>
+							Diversificación del riesgo
+						</li>
+						<li>
+							Acceso a invertir con bajos montos en diferentes mercados financieros
+						</li>
+						<li>
+							Capitalización diaria de rendimientos
+						</li>
+					</ul>
+				</div>
+	
+				<div class="botones_simulador2">
+					<a href="#pg17"><img src="img/034.png"></a>
+					<!--a href="#gr3" id="gr_bt3"><img src="img/123.png"></a-->
+				</div>
+				<div class="footer">
+					<a href="#pg2" class="link_footer" id="bt_home"></a>
+					<a href="#pg13a" class="link_footer" id="bt_forward"></a>
+					<!--a href="#pg9" class="link_footer" id="bt_forward"></a>
+					<a href="#pg17" class="link_footer" id="bt_back"></a-->
+
+					<a href="#pg3" class="link_footer " id="bt_1"></a>
+					<a href="#pg4" class="link_footer" id="bt_2"></a>
+					<a href="#pg25" class="link_footer active_link" id="bt_3"></a>
+					<a href="#pg17a" class="link_footer" id="bt_6"></a>				
+					<a href="#pg17" class="link_footer" id="bt_4"></a>
+					<a href="#pg20-24" class="link_footer" id="bt_5"></a>
+					<a href="#pg31" class="link_footer" id="bt_7"></a>
+				</div>
+			</div>
+		</div>
+		<!-- **********************  pg 13 B RIESGO MODERADO **********************  -->
+<div data-role="page" id="pg13b">
+    <div class="content pg13b_content relative">
+    	<div class="logo1"></div>
+		
+       <div id="sliderA" class="slider newslider">
+				<img src="img/128.png" style="height:50px" />
+				<img src="img/129.png" />
+	   </div>
+            
+            
+    	<div class="footer">
+        	<a href="#pg2" class="link_footer" id="bt_home"></a>
+            <a href="#pg13a" class="link_footer" id="bt_forward"></a>
+
+        	<!--a href="#pg9" class="link_footer" id="bt_forward"></a>
+            <a href="#pg17" class="link_footer" id="bt_back"></a-->
+            
+					<a href="#pg3" class="link_footer " id="bt_1"></a>
+					<a href="#pg4" class="link_footer" id="bt_2"></a>
+					<a href="#pg25" class="link_footer active_link" id="bt_3"></a>
+					<a href="#pg17a" class="link_footer" id="bt_6"></a>				
+					<a href="#pg17" class="link_footer" id="bt_4"></a>
+					<a href="#pg20-24" class="link_footer" id="bt_5"></a>
+					<a href="#pg31" class="link_footer" id="bt_7"></a>
+        </div>
+    </div>
+</div>
+
+		<!-- **********************  pg 14 RIESGO ALTO  ***** INDEX * **********************  -->
+		<div data-role="page" id="pg14">
+			<div class="content pg14_content relative">
+				<div class="logo1"></div>
+				<div class="botones_riesgo">
+					<a href="#pg15"><img src="img/042.png" style="width:300px"></a>
+					<a href="#pg16"><img src="img/043.png" style="width:300px"></a>
+					<a href="#pg14a"><img src="img/125.png" style="width:300px"></a>
+				</div>
+
+				<div class="footer">
+					<a href="#pg2" class="link_footer" id="bt_home"></a>
+					<!--a href="#pg9" class="link_footer" id="bt_forward"></a>
+					<a href="#pg17" class="link_footer" id="bt_back"></a-->
+					<a href="#pg3" class="link_footer " id="bt_1"></a>
+					<a href="#pg4" class="link_footer" id="bt_2"></a>
+					<a href="#pg25" class="link_footer active_link" id="bt_3"></a>
+					<a href="#pg17a" class="link_footer" id="bt_6"></a>				
+					<a href="#pg17" class="link_footer" id="bt_4"></a>
+					<a href="#pg20-24" class="link_footer" id="bt_5"></a>
+					<a href="#pg31" class="link_footer" id="bt_7"></a>
+				</div>
+			</div>
+		</div>
+
+		<!-- **********************  pg 14 RIESGO ALTO **********************  -->
+<div data-role="page" id="pg14a">
+    <div class="content pg14a_content relative">
+    	<div class="logo1"></div>
+		<div id="sliderB" class="slider newslider">
+				<img src="img/130.png" />
+				<img src="img/131.png" />
+	   </div>
+
+                
+    	<div class="footer">
+					<a href="#pg2" class="link_footer" id="bt_home"></a>
+					<a href="#pg14" class="link_footer" id="bt_forward"></a>
+					<!--a href="#pg9" class="link_footer" id="bt_forward"></a>
+					<a href="#pg17" class="link_footer" id="bt_back"></a-->
+					<a href="#pg3" class="link_footer" id="bt_1"></a>
+					<a href="#pg4" class="link_footer" id="bt_2"></a>
+					<a href="#pg25" class="link_footer active_link" id="bt_3"></a>
+					<a href="#pg17a" class="link_footer" id="bt_6"></a>					
+					<a href="#pg17" class="link_footer" id="bt_4"></a>
+					<a href="#pg20-24" class="link_footer" id="bt_5"></a>
+					<a href="#pg31" class="link_footer" id="bt_7"></a>
+        </div>
+    </div>
+</div>
+
+		<!-- **********************  pg 15 RIESGO ALTO **********************  -->
+		<div data-role="page" id="pg15">
+			<div class="content pg15_content relative">
+				<div class="logo1"></div>
+
+				<div class="textos_bogota">
+					<h2>PLAZO</h2>
+					<p>
+						90 días
+					</p>
+
+					<h2>OBJETIVO INVERSIÓN</h2>
+					<p>
+						Alternativa de inversión  con
+						perfil de RIESGO
+						MODERADO para un
+						inversionista conservador
+						tendiente a la conservación
+						del capital y obtención de
+						rentabilidad
+					</p>
+
+					<h2>PORTAFOLIO DE INVERSIÓN</h2>
+					<p>
+						Valores inscritos en el Registro
+						Nacional de Valores y Emisores,
+						emitidos o garantizados por la
+						Nación, el Banco de la República y
+						de FOGAFIN. Así como aquellos
+						bonos emitidos por el Gobierno
+						Nacional que hacen parte de la
+						deuda externa
+					</p>
+
+					<h2>BENEFICIO</h2>
+					<ul style="margin:0px; padding:0px; margin-left:20px;">
+						<li>
+							Diversificación del riesgo
+						</li>
+						<li>
+							Acceso a invertir con bajos montos en diferentes mercados financieros
+						</li>
+						<li>
+							Capitalización diaria de rendimientos
+						</li>
+					</ul>
+				</div>
+
+				<div class="botones_simulador2">
+					<a href="#pg17"><img src="img/034.png"></a>
+					<!--a href="#gr4" id="gr_bt4"><img src="img/123.png"></a-->
+				</div>
+				<div class="footer">
+					<a href="#pg2" class="link_footer" id="bt_home"></a>
+					<a href="#pg14" class="link_footer" id="bt_forward"></a>
+					<!--a href="#pg17" class="link_footer" id="bt_back"></a-->
+					<a href="#pg3" class="link_footer " id="bt_1"></a>
+					<a href="#pg4" class="link_footer" id="bt_2"></a>
+					<a href="#pg25" class="link_footer active_link" id="bt_3"></a>
+					<a href="#pg17a" class="link_footer" id="bt_6"></a>					
+					<a href="#pg17" class="link_footer" id="bt_4"></a>
+					<a href="#pg20-24" class="link_footer" id="bt_5"></a>
+					<a href="#pg31" class="link_footer" id="bt_7"></a>
+				</div>
+			</div>
+		</div>
+
+		<!-- **********************  pg 16 RIESGO ALTO **********************  -->
+		<div data-role="page" id="pg16">
+			<div class="content pg16_content relative">
+				<div class="logo1"></div>
+
+				<div class="textos_bogota">
+					<h2>PLAZO</h2>
+					<p>
+						30 días (T=3)
+					</p>
+
+					<h2>OBJETIVO INVERSIÓN</h2>
+					<p>
+						Alternativa de inversión con
+						perfil de RIESGO ALTO para
+						un inversionista conocedor,
+						enfocada al crecimiento de
+						capital a largo plazo y
+						sometida a fluctuaciones   de
+						la rentabilidad a mediano
+						plazo, de acuerdo con las
+						condiciones de mercado
+					</p>
+
+					<h2>PORTAFOLIO DE INVERSIÓN</h2>
+					<p>
+						Activos de Renta Variable inscritos
+						en una bolsa de valores, regulado por
+						un ente adscrito a IOSCO y/o
+						activos de renta variable
+						internacional, incluyendo ofertas
+						públicas iniciales de acciones
+					</p>
+
+					<h2>BENEFICIO</h2>
+					<ul style="margin:0px; padding:0px; margin-left:20px;">
+						<li>
+							Diversificación del riesgo
+						</li>
+						<li>
+							Acceso a invertir con bajos montos en diferentes mercados financieros
+						</li>
+						<li>
+							Capitalización diaria de rendimientos
+						</li>
+					</ul>
+				</div>
+
+				<div class="botones_simulador">
+					<a href="#pg17"><img src="img/034.png"></a>
+					<!--a href="#gr5" id="gr_bt5"><img src="img/123.png"></a-->
+				</div>
+				<div class="footer">
+					<a href="#pg2" class="link_footer" id="bt_home"></a>
+					<a href="#pg14" class="link_footer" id="bt_forward"></a>
+					<!--a href="#pg17" class="link_footer" id="bt_back"></a-->
+					<a href="#pg3" class="link_footer " id="bt_1"></a>
+					<a href="#pg4" class="link_footer" id="bt_2"></a>
+					<a href="#pg25" class="link_footer active_link" id="bt_3"></a>
+					<a href="#pg17a" class="link_footer" id="bt_6"></a>					
+					<a href="#pg17" class="link_footer" id="bt_4"></a>
+					<a href="#pg20-24" class="link_footer" id="bt_5"></a>
+					<a href="#pg31" class="link_footer" id="bt_7"></a>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- **********************  pg 17 Formularios **********************  -->
+		<div data-role="page" id="pg17">
+			<div class="content pg17_content relative">
+				<div class="logo1"></div>
+				<div class="pdf_bts" style="width: 100%; height: 50%; overflow-x: hidden; overflow-y: scroll; padding-top: 0px;">
+					<div class="pdf_bt">
+						<div class="name_pdf">
+							ACTUALIZACIÓN DATOS PERSONA JURIDICA
+						</div>
+						<a href="pdf/ACTUALIZACION_DATOS_PER_JURIDICA.pdf" class="cloud" data-ajax="false"></a>
+						<a href="#" class="mail"></a>
+					</div>
+
+					<div class="pdf_bt">
+						<div class="name_pdf">
+							ACTUALIZACIÓN DATOS PERSONA NATURAL
+						</div>
+						<a href="pdf/ACTUALIZACION_DATOS_PER_NATURAL.pdf" class="cloud" data-ajax="false"></a>
+						<a href="#" class="mail"></a>
+					</div>
+
+					<div class="pdf_bt">
+						<div class="name_pdf">
+							FORMATO VINCULACIÓN PERSONA JURIDICA
+						</div>
+						<a href="pdf/FORM_VINCULA_PERSONA_JURIDICA.pdf" class="cloud" data-ajax="false"></a>
+						<a href="#" class="mail"></a>
+					</div>
+
+					<div class="pdf_bt">
+						<div class="name_pdf">
+							FORMATO VINCULACIÓN PERSONA NATURAL
+						</div>
+						<a href="pdf/FORM_VINCULA_PERSONA_NATURAL.pdf" class="cloud" data-ajax="false"></a>
+						<a href="#" class="mail"></a>
+					</div>
+
+					<div class="pdf_bt">
+						<div class="name_pdf">
+							FORMATO PARA NEGOCIOS
+						</div>
+						<a href="pdf/FORMATO_PARA_NEGOCIOS_DE_ADMINISTRACION.pdf" class="cloud" data-ajax="false"></a>
+						<a href="#" class="mail"></a>
+					</div>
+
+					<div class="pdf_bt">
+						<div class="name_pdf">
+							INFORMACION FIRMA REP LEGAL
+						</div>
+						<a href="pdf/INFORMACION FIRMA REP LEGAL1.pdf" class="cloud" data-ajax="false"></a>
+						<a href="#" class="mail"></a>
+					</div>
+					<div class="pdf_bt">
+						<div class="name_pdf">
+							FORMATO ACEPTACIÓN CUBRIR
+						</div>
+						<a href="pdf/Formato Aceptación CUBRIR.pdf" class="cloud" data-ajax="false"></a>
+						<a href="#" class="mail"></a>
+					</div>
+					<div class="pdf_bt">
+						<div class="name_pdf">
+							FORMATO ACEPTACIÓN FIDUACCION
+						</div>
+						<a href="pdf/Formato Aceptación FIDUACCION.pdf" class="cloud" data-ajax="false"></a>
+						<a href="#" class="mail"></a>
+					</div>
+					<div class="pdf_bt">
+						<div class="name_pdf">
+							FORMATO ACEPTACIÓN FIDUGOB
+						</div>
+						<a href="pdf/Formato Aceptación FIDUGOB.pdf" class="cloud" data-ajax="false"></a>
+						<a href="#" class="mail"></a>
+					</div>
+					<div class="pdf_bt">
+						<div class="name_pdf">
+							FORMATO ACEPTACIÓN OPTIMO
+						</div>
+						<a href="pdf/Formato Aceptación OPTIMO.pdf" class="cloud" data-ajax="false"></a>
+						<a href="#" class="mail"></a>
+					</div>
+					<div class="pdf_bt">
+						<div class="name_pdf">
+							FORMATO ACEPTACIÓN SUMAR
+						</div>
+						<a href="pdf/Formato Aceptación SUMAR.pdf" class="cloud" data-ajax="false"></a>
+						<a href="#" class="mail"></a>
+					</div>
+
+				</div>
+
+				<div class="footer">
+					<a href="#pg2" class="link_footer" id="bt_home"></a>
+					<!-- a href="#pg9" class="link_footer" id="bt_forward"></a>
+					<a href="#pg18" class="link_footer" id="bt_back"></a -->
+
+					<a href="#pg3" class="link_footer" id="bt_1"></a>
+					<a href="#pg4" class="link_footer" id="bt_2"></a>
+					<a href="#pg25" class="link_footer" id="bt_3"></a>
+					<a href="#pg17a" class="link_footer" id="bt_6"></a>					
+					<a href="#pg17" class="link_footer active_link" id="bt_4"></a>
+					<a href="#pg20-24" class="link_footer" id="bt_5"></a>
+					<a href="#pg31" class="link_footer" id="bt_7"></a>
+
+				</div>
+			</div>
+		</div>			
+		<!-- **********************  pg 17a  **********************  -->
+		<div data-role="page" id="pg17a">
+			<div class="content pg17a_content relative">
+				<div class="logo1"></div>
+				<div class="link_simula">
+					<a href="#pg18"><img src="img/101.png" style="width:400px"></a>
+					<a href="#pg19"><img src="img/102.png" style="width:400px;"></a>
+				</div>
+
+				<div class="footer">
+
+					<a href="#pg2" class="link_footer" id="bt_home"></a>
+					<a href="#pg3" class="link_footer" id="bt_1"></a>
+					<a href="#pg4" class="link_footer" id="bt_2"></a>
+					<a href="#pg25" class="link_footer" id="bt_3"></a>
+					<a href="#pg17a" class="link_footer active_link" id="bt_6"></a>					
+					<a href="#pg17" class="link_footer" id="bt_4"></a>
+					<a href="#pg20-24" class="link_footer" id="bt_5"></a>
+					<a href="#pg31" class="link_footer" id="bt_7"></a>
+
+				</div>
+
+			</div>
+		</div>
+		<!-- **********************  pg 18 Formularios **********************  -->
+		<div data-role="page" id="pg18">
+			<div class="content pg18_content relative">
+				<div class="logo1"></div>
+				<div class="form_container">
+					<div class="columna">
+						<div class="field">
+							<div class="label">
+								Proyecto
+							</div>
+
+							<select  name="select-choice-1" id="select-choice-1">
+								<option>Viaje</option>
+
+								<option>Estudio</option>
+
+								<option>Vivienda</option>
+
+								<option>Salud y Belleza</option>
+
+								<option>Soat</option>
+
+								<option>Declaración de Renta</option>
+
+								<option>Seguro todo riesgo vehículo</option>
+
+								<option>Impuesto Predial</option>
+
+								<option>Seguros Incendio y Terremoto</option>
+
+								<option>Seguros de maquinaria y equipos</option>
+
+								<option> Cesantías y Primas de los empleados</option>
+
+								<option>Remodelaciones</option>
+
+								<option>Compra de activos</option>
+							</select>
+						</div>
+
+						<div class="field">
+							<div >
+								<div class="label">
+									Meses de ahorro
+								</div>
+
+								<input type="tel" name="meses" value="" class="input_rr min_input1">
+
+							</div>
+
+							<div class="clear"></div>
+						</div>
+
+						<div class="field">
+							<div class="label">
+								¿Cuánto es tu meta de ahorro?
+							</div>
+							<input type="tel" name="vf" class="input_rr" value="" placeholder="$">
+						</div>
+					</div>
+
+					<div class="columna">
+						<div class="field">
+							<div class="label">
+								Mes de inicio del ahorro
+							</div>
+							<input class="input_rr min_input1" type="text" name="datepicker" id="datepicker" readonly="readonly"  />
+						</div>
+						<div class="field">
+							<div class="label">
+								Mes de fin del ahorro
+							</div>
+							<div class="fecha">
+								0
+							</div>
+						</div>
+
+						<div class="field">
+							<div class="label">
+								Fondo de inversion
+							</div>
+							<select  name="select-choice-1" id="select-choice-1" style="z-index: 1;">
+								<option>SUMAR</option>
+
+								<option>FIDUBOG</option>
+
+								<option>ÓPTIMO</option>
+
+								<option>CUBRIR</option>
+
+								<option>FIDUACCIÓN</option>
+
+							</select>
+						</div>
+					</div>
+
+					<div class="columna">
+
+						<div class="field">
+							<div class="label">
+								Rentabilidad del Fondo
+							</div>
+							<div style="width:140px; float:left">
+								<input type="tel" name="ea" value="" class="input_rr min_input1" placeholder="% E.A">
+							</div>
+							<div style="width:140px; float:right">
+								<div id="eames" class="sumar">
+									0
+								</div>
+							</div>
+
+							<div class="field">
+
+							</div>
+							<div class="clear" style="margin-bottom:-6px"></div>
+						</div>
+
+						<div class="field">
+							<div class="label">
+								Incremento de la cuota Anual
+							</div>
+							<input type="tel" name="incremento" value="" class="input_rr" placeholder="%">
+						</div>
+
+						<div class="field">
+							<div class="label">
+								Cuota mensual del primer año
+							</div>
+							<div class="primera">
+								0
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<a href="#" onclick="tabla();" class="ver_proyeccion" id="ver1" ></a>
+
+				<div class="pop" id="ver_box_1">
+					<a href="#" class="close_popup"></a>
+					<center><img src="img/053.png" style="margin-top:30px" id="">
+					</center>
+
+					<div class="scroll">
+						<table id="tabla" class="table" width="90%" border="0" align="center" cellpadding="0" cellspacing="0">
+
+							<tr class="head_table">
+
+								<td align="center">AÑOS</td>
+								<td align="center">ACUMULADO AÑO</td>
+								<td align="center">CUOTA MES</td>
+
+							</tr>
+							<tr   class="tabla">
+								<td align="center">1</td>
+								<td align="center">$4.323.00O</td>
+								<td align="center">$423.000</td>
+							</tr>
+							<tr>
+								<td align="center">2</td>
+								<td align="center">$4.323.00O</td>
+								<td align="center">$423.000</td>
+							</tr>
+							<tr>
+								<td align="center">3</td>
+								<td align="center">$8.323.00O</td>
+								<td align="center">$423.000</td>
+							</tr>
+							<tr>
+								<td align="center">4</td>
+								<td align="center">$14.323.00O</td>
+								<td align="center">$423.000</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+
+				<div class="footer">
+					<a href="#pg2" class="link_footer" id="bt_home"></a>
+					<a href="#pg17a" class="link_footer" id="bt_forward"></a>
+					<a href="#pg3" class="link_footer" id="bt_1"></a>
+					<a href="#pg4" class="link_footer" id="bt_2"></a>
+					<a href="#pg5" class="link_footer" id="bt_3"></a>
+					<a href="#pg17a" class="link_footer active_link" id="bt_6"></a>					
+					<a href="#pg17" class="link_footer" id="bt_4"></a>
+					<a href="#pg20-24" class="link_footer" id="bt_5"></a>
+					<a href="#pg31" class="link_footer " id="bt_7"></a>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- **********************  pg 19 Formularios **********************  -->
+		<div data-role="page" id="pg19">
+			<div class="content pg19_content relative">
+				<div class="logo1"></div>
+				<div class="form_container">
+					<div class="columna">
+
+						<div class="field">
+							<div >
+								<div class="label">
+									Meses de ahorro
+								</div>
+								<input type="tel" name="meses2" value="" class="input_rr min_input1">
+							</div>
+
+							<div class="clear"></div>
+						</div>
+
+						<div class="field">
+							<div class="label">
+								Fondo de inversion
+							</div>
+							<select  name="select-choice-1" id="select-choice-1" style="z-index: 1;">
+								<option>SUMAR</option>
+
+								<option>FIDUBOG</option>
+
+								<option>ÓPTIMO</option>
+
+								<option>CUBRIR</option>
+
+								<option>FIDUACCIÓN</option>
+
+							</select>
+						</div>
+						<div class="field">
+							<div class="label">
+								Mes de inicio del ahorro
+							</div>
+							<input class="input_rr min_input1" type="text" name="datepicker2" id="datepicker2" readonly="readonly"  />
+						</div>
+					</div>
+
+					<div class="columna">
+
+						<div class="field">
+							<div class="label">
+								Mes de fin del ahorro
+							</div>
+							<div class="fecha">
+								0
+							</div>
+						</div>
+						<div class="field">
+							<div class="label">
+								Rentabilidad del Fondo
+							</div>
+							<div style="width:140px; float:left">
+								<input type="tel" name="ea2" value="" class="input_rr min_input1" placeholder="% E.A">
+							</div>
+							<div style="width:140px; float:right">
+								<div id="eames2" class="sumar2">
+									0
+								</div>
+
+							</div>
+							<div class="clear" style="margin-bottom:-6px"></div>
+						</div>
+
+					</div>
+					<div class="columna">
+
+						<div class="field">
+							<div class="label">
+								Incremento de la cuota Anual
+							</div>
+							<div style="width:140px; float:left">
+								<input type="tel" name="ea3" value="" class="input_rr min_input1" placeholder="% ">
+							</div>
+							<div style="width:140px; float:right">
+								<div id="eames3" class="sumar3">
+									0
+								</div>
+
+							</div>
+							<div class="clear" style="margin-bottom:-6px"></div>
+						</div>
+						<div class="field">
+							<div class="label">
+								Valor mensual ahorro
+							</div>
+							<input type="tel" name="ahorro" class="input_rr" placeholder="$">
+						</div>
+
+						<div class="field">
+							<div class="label">
+								Valor total del ahorro
+							</div>
+							<div class="segunda">
+								0
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<a href="#" onclick="tabla2();"  class="ver_proyeccion" id="ver2" style="margin-top:10px;"></a>
+
+				<div class="pop" id="ver_box_2">
+					<a href="#" class="close_popup"></a>
+					<center><img src="img/053.png" style="margin-top:30px" id="">
+					</center>
+					<div class="scroll">
+
+						<table id="tabla2" class="table" width="90%" border="0" align="center" cellpadding="0" cellspacing="0">
+							<tr class="head_table">
+								<td align="center">AÑO</td>
+								<td align="center">ACUMULADO AÑO</td>
+								<td align="center">CUOTA MES</td>
+							</tr>
+							<tr>
+								<td align="center">1</td>
+								<td align="center">$4.323.00O</td>
+								<td align="center">$423.000</td>
+							</tr>
+							<tr>
+								<td align="center">2</td>
+								<td align="center">$4.323.00O</td>
+								<td align="center">$423.000</td>
+							</tr>
+							<tr>
+								<td align="center">3</td>
+								<td align="center">$8.323.00O</td>
+								<td align="center">$423.000</td>
+							</tr>
+							<tr>
+								<td align="center">4</td>
+								<td align="center">$14.323.00O</td>
+								<td align="center">$423.000</td>
+							</tr>
+						</table>
+					</div>
+
+				</div>
+
+				<div class="footer">
+					<a href="#pg2" class="link_footer" id="bt_home"></a>
+					<a href="#pg17a" class="link_footer" id="bt_forward"></a>
+					<!--a href="#" class="link_footer" id="bt_back"></a -->
+
+					<a href="#pg3" class="link_footer" id="bt_1"></a>
+					<a href="#pg4" class="link_footer" id="bt_2"></a>
+					<a href="#pg25" class="link_footer" id="bt_3"></a>
+					<a href="#pg17a" class="link_footer active_link" id="bt_6"></a>			
+					<a href="#pg17" class="link_footer" id="bt_4"></a>
+					<a href="#pg20-24" class="link_footer" id="bt_5"></a>
+					<a href="#pg31" class="link_footer " id="bt_7"></a>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- **********************  pg 20 - 24 slide **********************  -->
+		<div data-role="page" id="pg20-24">
+			<div class="content pg20-24_content relative">
+				<div class="logo1"></div>
+
+				<div class="device">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+
+							<div class="swiper-slide">
+								<a class="arrow-left" href="#"></a>
+								<a class="arrow-right" href="#"></a>
+								<div class="pop" id="gr20">
+									<a href="#" class="close_popup"></a>
+									<center><img src="img/068.png" id="img_gr20">
+									</center>
+								</div>
+								<img src="img/098.png" class="imagen_device" />
+								<a href="#" id="gr_bt20" style="margin-top:500px !important; float:left; display:block; margin-left:110px; position:absolute; z-index:9"><img src="img/033.png"></a>
+							</div>
+
+							<div class="swiper-slide" class="">
+								<a class="arrow-left" href="#"></a>
+								<a class="arrow-right" href="#"></a>
+								<img src="img/096.png" class="imagen_device" />
+							</div>
+
+							<div class="swiper-slide" class="">
+								<a class="arrow-left" href="#"></a>
+								<a class="arrow-right" href="#"></a>
+								<div class="pop" id="gr22">
+									<a href="#" class="close_popup"></a>
+									<center><img src="img/070.png" id="img_gr22">
+									</center>
+								</div>
+								<img src="img/097.png" class="imagen_device" />
+								<a href="#" id="gr_bt22" style="margin-top:500px !important; float:left; display:block; margin-left:110px; position:absolute; z-index:9"><img src="img/033.png"></a>
+							</div>
+
+							<div class="swiper-slide" class="">
+								<a class="arrow-left" href="#"></a>
+								<a class="arrow-right" href="#"></a>
+								<img src="img/099.png" class="imagen_device" />
+
+								<div class="pop" id="gr25">
+									<a href="#" class="close_popup"></a>
+									<center><img src="img/074.png" id="img_gr22" style="margin-left:35px">
+									</center>
+								</div>
+
+								<a href="#" id="gr_bt25" style="margin-top:540px !important; float:left; display:block; margin-left:75px; position:absolute; z-index:99"><img src="img/033.png"></a>
+							</div>
+
+							<div class="swiper-slide" class="">
+								<a class="arrow-left" href="#"></a>
+								<a class="arrow-right" href="#"></a>
+
+								<img src="img/100.png" class="imagen_device" />
+							</div>
+
+						</div>
+					</div>
+					<div class="pagination"></div>
+				</div>
+				<script src="js/jquery-1.10.1.min.js"></script>
+				<script src="js/idangerous.swiper-2.1.min.js"></script>
+				<script>
+					var mySwiper = new Swiper('.swiper-container', {
+						pagination : '.pagination',
+						loop : true,
+						grabCursor : true,
+						paginationClickable : true
+					})
+					$('.device .arrow-left').on('click', function(e) {
+						e.preventDefault()
+						mySwiper.swipePrev()
+					})
+					$('.device .arrow-right').on('click', function(e) {
+						e.preventDefault()
+						mySwiper.swipeNext()
+					})
+				</script>
+
+				<div class="footer">
+					<a href="#pg2" class="link_footer" id="bt_home"></a>
+					<!--a href="#pg17a" class="link_footer" id="bt_forward"></a-->
+					<a href="#pg3" class="link_footer" id="bt_1"></a>
+					<a href="#pg4" class="link_footer" id="bt_2"></a>
+					<a href="#pg25" class="link_footer" id="bt_3"></a>
+					<a href="#pg17a" class="link_footer" id="bt_6"></a>					
+					<a href="#pg17" class="link_footer" id="bt_4"></a>
+					<a href="#pg20-24" class="link_footer active_link" id="bt_5"></a>
+					<a href="#pg31" class="link_footer " id="bt_7"></a>
+
+				</div>
+			</div>
+		</div>
+		<!-- **********************  pg 20 GARANTIAS **********************  -->
+		<div data-role="page" id="pg20">
+			<div class="content pg20_content relative">
+				<div class="logo1"></div>
+
+				<div class="footer">
+					<a href="#pg2" class="link_footer" id="bt_home"></a>
+					<!--a href="#pg17a" class="link_footer" id="bt_forward"></a-->
+					<a href="#pg21" class="link_footer" id="bt_back"></a>
+					<a href="#pg3" class="link_footer" id="bt_1"></a>
+					<a href="#pg4" class="link_footer" id="bt_2"></a>
+					<a href="#pg25" class="link_footer" id="bt_3"></a>
+					<a href="#pg17" class="link_footer" id="bt_4"></a>
+					<a href="#pg20-24" class="link_footer" id="bt_5"></a>
+					<a href="#pg17a" class="link_footer" id="bt_6"></a>
+					<a href="#pg31" class="link_footer " id="bt_7"></a>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- **********************  pg 21 GARANTIAS y SEGURIDADES **********************  -->
+		<div data-role="page" id="pg21">
+			<div class="content pg21_content relative">
+				<div class="logo1"></div>
+				<div class="footer">
+					<a href="#pg2" class="link_footer" id="bt_home"></a>
+					<!--a href="#pg17a" class="link_footer" id="bt_forward"></a-->
+					<a href="#pg22" class="link_footer" id="bt_back"></a>
+					<a href="#pg3" class="link_footer" id="bt_1"></a>
+					<a href="#pg4" class="link_footer" id="bt_2"></a>
+					<a href="#pg25" class="link_footer" id="bt_3"></a>
+					<a href="#pg17a" class="link_footer" id="bt_6"></a>				
+					<a href="#pg17" class="link_footer" id="bt_4"></a>
+					<a href="#pg20-24" class="link_footer" id="bt_5"></a>
+					<a href="#pg31" class="link_footer " id="bt_7"></a>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- **********************  pg 22 ADINISTRACIÓN Y FUENTES **********************  -->
+		<div data-role="page" id="pg22">
+			<div class="content pg22_content relative">
+				<div class="logo1"></div>
+				<div class="pop" id="gr22">
+					<a href="#" class="close_popup"></a>
+					<center><img src="img/070.png" id="img_gr22">
+					</center>
+				</div>
+
+				<a href="#" id="gr_bt22" style="margin-top:500px !important; float:left; display:block; margin-left:110px"><img src="img/033.png"></a>
+
+				<div class="footer">
+					<a href="#pg2" class="link_footer" id="bt_home"></a>
+					<!--a href="#pg17a" class="link_footer" id="bt_forward"></a-->
+					<a href="#pg23" class="link_footer" id="bt_back"></a>
+					<a href="#pg3" class="link_footer" id="bt_1"></a>
+					<a href="#pg4" class="link_footer" id="bt_2"></a>
+					<a href="#pg25" class="link_footer" id="bt_3"></a>
+					<a href="#pg17" class="link_footer" id="bt_4"></a><a href="#pg20-24" class="link_footer" id="bt_5"></a>
+					<a href="#pg17a" class="link_footer" id="bt_6"></a>
+					<a href="#pg31" class="link_footer " id="bt_7"></a>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- **********************  pg 23 ADINISTRACIÓN Y FUENTES **********************  -->
+		<div data-role="page" id="pg23">
+			<div class="content pg23_content relative">
+				<div class="logo1"></div>
+				<div class="footer">
+					<a href="#pg2" class="link_footer" id="bt_home"></a>
+					<!--a href="#pg17a" class="link_footer" id="bt_forward"></a-->
+					<a href="#pg24" class="link_footer" id="bt_back"></a>
+					<a href="#pg3" class="link_footer" id="bt_1"></a>
+					<a href="#pg4" class="link_footer" id="bt_2"></a>
+					<a href="#pg25" class="link_footer" id="bt_3"></a>
+					<a href="#pg17" class="link_footer" id="bt_4"></a>
+					<a href="#pg20-24" class="link_footer" id="bt_5"></a>
+					<a href="#pg17a" class="link_footer" id="bt_6"></a>
+					<a href="#pg31" class="link_footer " id="bt_7"></a>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- **********************  pg 24 ADINISTRACIÓN Y FUENTES **********************  -->
+		<div data-role="page" id="pg24">
+			<div class="content pg24_content relative">
+				<div class="logo1"></div>
+
+				<div class="footer">
+					<a href="#pg2" class="link_footer" id="bt_home"></a>
+					<!--a href="#pg17a" class="link_footer" id="bt_forward"></a-->
+					<a href="#pg3" class="link_footer" id="bt_1"></a>
+					<a href="#pg4" class="link_footer" id="bt_2"></a>
+					<a href="#pg25" class="link_footer" id="bt_3"></a>
+					<a href="#pg17" class="link_footer" id="bt_4"></a>
+					<a href="#pg20-24" class="link_footer" id="bt_5"></a>
+					<a href="#pg17a" class="link_footer" id="bt_6"></a>
+					<a href="#pg31" class="link_footer " id="bt_7"></a>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- **********************  pg 25 DESCUBRE TU PERFIL DE RIESGO **********************  -->
+		<div data-role="page" id="pg25">
+			<div class="content pg25_content relative">
+
+				<div class="logo1"></div>
+				<div class="link_simula">
+					<a href="#pg5"><img src="img/104.png" style="width:400px"></a>
+					<a href="#pg26"><img src="img/103.png" style="width:400px"></a>
+				</div>
+
+				<div class="footer">
+					<a href="#pg2" class="link_footer" id="bt_home"></a>
+					<a href="#pg3" class="link_footer" id="bt_1"></a>
+					<a href="#pg4" class="link_footer" id="bt_2"></a>
+					<a href="#pg25" class="link_footer active_link" id="bt_3"></a>
+					<a href="#pg17a" class="link_footer" id="bt_6"></a>				
+					<a href="#pg17" class="link_footer" id="bt_4"></a>
+					<a href="#pg20-24" class="link_footer" id="bt_5"></a>
+					<a href="#pg31" class="link_footer" id="bt_7"></a>
+
+				</div>
+			</div>
+		</div>
+		<!-- **********************  pg 31 FIDUBOGOTA **********************  -->
+		<div data-role="page" id="pg31">
+			<div class="content pg26_content relative">
+
+				<div class="logo1"></div>
+
+				<div class="bts_fidu bts1">
+					<a href="#pg11"><img src="img/115.png" /></a>
+					<a href="#pg12"><img src="img/116.png" style="position: relative; padding-left: 0px;" /></a>
+					<a href="#pg10a" style="position: relative; padding-left: 0px;"><img src="img/117.png" /></a>
+				</div>
+
+				<div class="bts_fidu bts2">
+					<a href="#pg13"><img src="img/118.png" /></a>
+					<a href="#pg13b"><img src="img/126.png" /></a>
+				</div>
+
+				<div class="bts_fidu bts3">
+					<a href="#pg15"><img src="img/119.png" /></a>
+					<a href="#pg16"><img src="img/120.png" /></a>
+					<a href="#pg14a"><img src="img/127.png" /></a>
+				</div>
+
+				<div class="footer">
+					<a href="#pg2" class="link_footer" id="bt_home"></a>
+					<a href="#pg3" class="link_footer" id="bt_1"></a>
+					<a href="#pg4" class="link_footer" id="bt_2"></a>
+					<a href="#pg25" class="link_footer" id="bt_3"></a>
+					<a href="#pg17a" class="link_footer" id="bt_6"></a>					
+					<a href="#pg17" class="link_footer" id="bt_4"></a>
+					<a href="#pg20-24" class="link_footer" id="bt_5"></a>
+					<a href="#pg31" class="link_footer active_link" id="bt_7"></a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

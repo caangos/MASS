@@ -1,0 +1,392 @@
+
+/* body */
+body{
+    font-family: 'dtl_argot_light';
+}
+
+/* header */
+header{
+    width: 100%;
+    height: 96px;
+    position: relative;
+}
+
+header .encabezado{
+    text-align: right;
+    width: 50%;
+    height: 15px;
+    padding: 0px 0px 5px 0px;
+    border-bottom: 1px solid #000000;
+    float: left;
+    position: relative;
+    margin: 60px 150px 0px 0px;
+}
+
+header .encabezado img{
+    position: absolute;
+    bottom: -12px;
+    right: 18px;
+}
+
+header .logo{
+    float: left;
+    margin: 35px 0px 0px 0px;
+}
+/* footer*/
+footer{
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    height: 106px;
+    background: #002c75;
+    top: 96px;
+}
+
+
+/* navegación*/
+footer nav{
+    margin: 25px 0px 0px 0px;
+}
+footer nav ul{
+    height: 60px;
+    list-style: none;
+    margin: 0px 0px 0px 180px;
+}
+footer nav ul li{
+    border-right: 2px solid #FFF;
+float: left;
+height: 55px;
+}
+footer nav ul li:first-child{
+    border-left: 2px solid #FFF;
+border-right: 2px solid #FFF;
+height: 55px;
+}
+
+
+
+/* contenidos */
+.contenidos{
+    min-height: 430px;
+    margin: 40px 0px 0px 0px;
+}
+
+
+/* controladores */
+.controlador{
+    float: left;
+    width: 295px;
+    height: 85px;
+    margin: 10px 10px 20px 120px;
+    font-size: 13px;
+}
+.controlador.full{
+    width: 720px;
+    height: 45px;
+    margin: 20px auto 0px auto;
+}
+
+/* controlador select */
+.controlador .div_select{
+    float: left;
+    width: 295px;
+    height: 45px;
+    margin: 15px 0px 0px 0px;
+    font-size: 13px;
+    overflow: hidden;
+    background: url('../img/bg/bg_controlador_select.jpg') no-repeat 260px 10px #eaeaea;
+    border: 1px solid #d2d2d2;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #CCC;
+}
+footer nav ul li a {
+    padding-bottom: 37px;
+    padding-left: 66px;
+}
+/*Aqui estan todos los iconos del footer*/
+/*Icono 1 del footer*/
+footer nav ul li a#icono1 {
+	background-image: url(../img/iconos/navegacion/icono1.png);
+}
+footer nav ul li a#icono1:hover {
+	background-image: url(../img/iconos/navegacion/icono1.png);
+	background-position: 0px -57px;
+}
+/*Icono 2 del footer*/
+footer nav ul li a#icono2 {
+	background-image: url(../img/iconos/navegacion/icono2.png);
+}
+footer nav ul li a#icono2:hover {
+	background-image: url(../img/iconos/navegacion/icono2.png);
+	background-position: 0px -57px;
+}
+/*Icono 3 del footer*/
+footer nav ul li a#icono3 {
+	background-image: url(../img/iconos/navegacion/icono3.png);
+}
+footer nav ul li a#icono3:hover {
+	background-image: url(../img/iconos/navegacion/icono3.png);
+	background-position: 0px -57px;
+}
+/*Icono 4 del footer*/
+footer nav ul li a#icono4 {
+	background-image: url(../img/iconos/navegacion/icono4.png);
+}
+footer nav ul li a#icono4:hover {
+	background-image: url(../img/iconos/navegacion/icono4.png);
+	background-position: 0px -57px;
+}
+/*Icono 5 del footer*/
+footer nav ul li a#icono5 {
+	background-image: url(../img/iconos/navegacion/icono5.png);
+}
+footer nav ul li a#icono5:hover {
+	background-image: url(../img/iconos/navegacion/icono5.png);
+	background-position: 0px -57px;
+}
+/*Icono 6 del footer*/
+footer nav ul li a#icono6 {
+	background-image: url(../img/iconos/navegacion/icono6.png);
+}
+footer nav ul li a#icono6:hover {
+	background-image: url(../img/iconos/navegacion/icono6.png);
+	background-position: 0px -57px;
+}
+/*Icono 7 del footer*/
+footer nav ul li a#icono7 {
+	background-image: url(../img/iconos/navegacion/icono7.png);
+}
+footer nav ul li a#icono7:hover {
+	background-image: url(../img/iconos/navegacion/icono7.png);
+	background-position: 0px -57px;
+}
+/*Icono 8 del footer*/
+footer nav ul li a#icono8 {
+	background-image: url(../img/iconos/navegacion/icono8.png);
+}
+footer nav ul li a#icono8:hover {
+	background-image: url(../img/iconos/navegacion/icono8.png);
+	background-position: 0px -57px;
+}
+/*Icono 9 del footer*/
+footer nav ul li a#icono9 {
+	background-image: url(../img/iconos/navegacion/icono9.png);
+}
+footer nav ul li a#icono9:hover {
+	background-image: url(../img/iconos/navegacion/icono9.png);
+	background-position: 0px -57px;
+}
+
+footer nav ul li a#icono10 {
+	background-image: url(../img/iconos/navegacion/icono10.png);
+}
+footer nav ul li a#icono10:hover {
+	background-image: url(../img/iconos/navegacion/icono10.png);
+	background-position: 0px -54px;
+}
+/*Aqui termina el codigo donde estan todos los iconos del footer*/
+
+.controlador .div_select select{
+    float: left;
+    width: 315px;
+    height: 45px;
+    margin: 0px 0px 0px 0px;
+    font-size: 13px;
+    border: none;
+    background: transparent;
+    font-family: 'dtl_argot_light';
+}
+
+.controlador .div_select select option{
+    background: #f9f9f9;
+}
+.controlador .div_select select option:nth-child(2n){
+    background: #f2f2f2;
+}
+
+/* controlador input type text */
+.controlador input[type="text"]{
+    float: left;
+    width: 285px;
+    height: 35px;
+    padding: 5px;
+    margin: 10px 0px 0px 0px;
+    font-size: 13px;
+    overflow: hidden;
+    background: #eaeaea;
+    border: 1px solid #d2d2d2;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #CCC;
+    font-family: 'dtl_argot_light';
+}
+
+/* controlador input type text */
+.controlador input[type="submit"], .controlador button{
+    width: 205px;
+    height: 45px;
+    padding: 5px;
+    margin: 0px 0px 0px 380px;
+    background: #FFF;
+    border:2px solid #cf7931;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    font-family: 'dtl_argot_light';
+    color: #cf7931;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+
+/* contenedor */
+.contenedor{
+    width: 900px;
+    margin: 0px auto;
+    padding-top: 4px;
+}
+
+
+/* contenedor de alertas */
+.contenedor_alerta{
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: #eaeaea;
+    border: 1px solid #d2d2d2;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #CCC;
+}
+
+.contenedor_alerta a.cerrar{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topright: 10px;
+    border-top-right-radius: 10px;
+    font-size: 0px;
+    cursor: pointer;
+
+}
+
+.contenedor_alerta .mensaje{
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin: 10px 0px 0px 10px;
+    float: left;
+}
+
+.contenedor_alerta.corta {
+    display: block !important;
+    width: 400px;
+    height: 200px;
+    margin: -100px 0px 0px -200px;
+}
+
+.contenedor_alerta.corta a.cerrar{
+    width: 41px;
+    height: 36px;
+    background: url('../img/btn/btn_cerrar_alerta_corta.png') no-repeat center top;
+    background-size: contain;
+}
+
+.contenedor_alerta.corta .mensaje{
+    width: 380px;
+    height: 180px;
+
+}
+
+.contenedor_alerta.corta .mensaje .alert{
+    width: 340px;
+    height: 20px;
+    padding: 15px 10px;
+    background: #f2f2f2;
+    color: #2b2b2b;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin: 7px 0px 0px 10px;
+}
+.contenedor_alerta.corta .mensaje .alert_alta{
+    width: 340px;
+    height: 70px;
+    padding: 15px 10px;
+    background: #f2f2f2;
+    color: #7f7b79;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin: 37px 0px 0px 10px;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 0px 0px 0px;
+}
+
+
+.contenedor_alerta.grande {
+    display: block !important;
+    width: 950px;
+    height: 510px;
+    margin: -300px 0px 0px -475px;
+}
+
+.contenedor_alerta.grande a.cerrar{
+    width: 72px;
+    height: 63px;
+    background: url('../img/btn/btn_cerrar_alerta.png') no-repeat center top;
+    background-size: contain;
+}
+
+.contenedor_alerta.grande .mensaje{
+    width: 830px;
+    height: 420px;
+    padding: 70px 50px 0 50px;
+    overflow-y: scroll;
+}
+
+.contenedor_alerta.grande .mensaje table{
+   width: 100%;
+   margin: 0px 0px 20px 0px;
+}
+
+.contenedor_alerta.grande .mensaje table tr{
+   background:#aeaeae;
+}
+.contenedor_alerta.grande .mensaje table tr:nth-child(2n){
+   background:#e3e3e3;
+}
+.contenedor_alerta.grande .mensaje table tr td, .contenedor_alerta.grande .mensaje table tr th{
+   padding:6px 4px;
+   text-align: center;
+       
+}
+
+
+/* estilos para los encabezados de rendimiento*/
+.contenedor_alerta.grande .mensaje table.rendimientos th{
+   background:#f4cc21;
+   color: #FFF; 
+}
+
+/* estilos para los encabezados de rentabilidad*/
+.contenedor_alerta.grande .mensaje table.rentabilidad th{
+   background:#e3a611;
+   color: #FFF; 
+}
+
+/* estilos para los encabezados de Volatilidad*/
+.contenedor_alerta.grande .mensaje table.volatilidad th{
+   background:#c22820;
+   color: #FFF; 
+}
+

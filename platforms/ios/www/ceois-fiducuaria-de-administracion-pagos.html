@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+	<head>
+		<title>FiduBogotá</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- importo los CSS -->
+		<link href="UserSystem/css/reset.css" rel="stylesheet" type="text/css"/>
+		<link href="UserSystem/css/fuentes.css" rel="stylesheet" type="text/css"/>
+		<link href="UserSystem/css/estilos.css" rel="stylesheet" type="text/css"/>
+
+	</head>
+	<body>
+		<!-- inicio del header -->
+		<header>
+			<!-- inicio del encabezado -->
+			<div class="encabezado">
+				Soluciones a la medida de sus necesidades
+				<img src="UserSystem/img/bg/bg_vineta_titulo.jpg" alt="" title=""/>
+			</div>
+			<!-- fin del encabezado -->
+			<!-- inicio del logo -->
+			<div class="logo">
+				<img src="UserSystem/img/logo/LogoFiduBogota.jpg" alt="Fidu Bogotá" title="Fidu Bogotá"/>
+			</div>
+			<!-- fin del logo -->
+		</header>
+		<!-- fin del header -->
+		<!-- inicio barra contenidos -->
+		<div style="text-align: center;">
+			<div id="tab-container" class='tab-container'>
+				<ul class='etabs' style="text-align: center;">
+					<li id="tab-admon-pagos" class='tab'>
+						<a href="#admon-pagos">Admon. y Pagos</a>
+						<img style="position: absolute; top: -4px; right: -37px;" src="UserSystem/img/sombra-tab.png" />						
+					</li>
+				</ul>
+				<div class='panel-container' style="height: 350px;">
+					<div id="admon-pagos">
+						<p class="texto-tabs">
+							Manejo de sumas  de dinero y/o  otros activos que junto con sus rendimientos si los hay,
+							pueden ser destinados al cumplimiento oportuno y adecuado de las obligaciones que
+							el cliente señale.
+
+						</p>
+						<img src="UserSystem/img/diagramas/contenido-admon-pagos.png" />
+					</div>
+				</div>
+			</div>
+			<button id="grafica-admon" class="boton-ver-grafica-admon" >
+
+				Ver gráficas
+
+			</button>
+			<!-- inicio contenedor alertas -->
+			<div class="contenedor_alerta">
+				<a class="cerrar">cerrar</a>
+				<div class="mensaje"><img src="UserSystem/img/graficas/grafica-barras-ceois.png" />
+				</div>
+			</div>
+			<div style="clear: both"></div>
+			<!-- fin contenedor alertas -->
+		</div>
+
+		<!-- fin barra contenidos -->
+		<!-- inicio barra navegación -->
+		<footer>
+			<div class="contenedor">
+				<nav>
+					<ul >
+						<li >
+							<a href="ceois-menu.html" id="icono1"></a>
+						</li>
+
+						<li>
+							<a href="ceois-fiducuaria-bogota.html" id="icono3"></a>
+						</li>
+						<li>
+							<a href="ceois-descubre-perfil.html" id="icono4"></a>
+						</li>
+						<li>
+							<a href="ceois-simuladores.html" id="icono7"></a>
+						</li>
+
+						<li>
+							<a id="icono5"></a>
+						</li>
+						<li>
+							<a href="ceois-fiducia-de-inversion.html" id="icono8"></a>
+						</li>
+
+												<li>
+							<a href="ceois-fiducuaria-de-administracion.html" id="icono10"></a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</footer>
+
+		<!-- fin barra navegación -->
+		<script src="UserSystem/js/jquery-1.9.1.js" type="text/javascript"></script>
+		<script src="UserSystem/js/jquery-ui-1.10.1.min.js" type="text/javascript"></script>
+		<script src="UserSystem/js/llamados.js" type="text/javascript"></script>
+		<!-- JS Tabs -->
+		<script src="UserSystem/js/vendor/jquery-1.7.1.min.js" type="text/javascript"></script>
+		<script src="UserSystem/js/vendor/jquery.hashchange.min.js" type="text/javascript"></script>
+		<script src="UserSystem/js/vendor/lib/jquery.easytabs.min.js" type="text/javascript"></script>
+		<!--Script Tabs-->
+		<script type="text/javascript">
+			$(document).ready(function() {
+			$('#tab-container').easytabs();
+			});
+		</script>
+		
+	</body>
+</html>

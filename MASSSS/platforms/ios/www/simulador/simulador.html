@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>FiduBogotá</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- importo los CSS -->
+        <link href="UserSystem/css/reset.css" rel="stylesheet" type="text/css"/>
+        <link href="UserSystem/css/fuentes.css" rel="stylesheet" type="text/css"/>
+        <link href="UserSystem/css/estilos.css" rel="stylesheet" type="text/css"/>
+        <!-- importo los css de datepicker -->
+        <link href="UserSystem/css/datepicker/jquery-ui-1.10.1.css" rel="stylesheet" type="text/css"/>
+        <link href="UserSystem/css/datepicker/nigran.datepicker.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <!-- inicio del header -->
+        <header>
+            <!-- inicio del encabezado -->
+            <div class="encabezado">
+                SUS OBJETIVOS Y NECESIDADES SON NUESTRA PRIORIDAD
+                <img src="UserSystem/img/bg/bg_vineta_titulo.jpg" alt="" title=""/>
+            </div>
+            <!-- fin del encabezado -->
+            <!-- inicio del logo -->
+            <div class="logo">
+                <img src="UserSystem/img/logo/LogoFiduBogota.jpg" alt="Fidu Bogotá" title="Fidu Bogotá"/>
+            </div>
+            <!-- fin del logo -->
+        </header>
+        <!-- fin del header -->
+        <!-- inicio barra contenidos -->
+        <div class="contenidos">
+            <div class="contenedor">
+                <!-- inicio de controlador -->
+                <div class="controlador">
+                    <div>Tipo Capital</div>
+                    <div class="div_select">
+                        <select id="tipo_capital" name="tipo_capital">
+                            <option value="">Seleccione una opción</option>
+                            <option value="1">Capital Menor</option>
+                            <option value="2">Capital Mayor</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- fin de controlador -->
+                <!-- inicio de controlador -->
+                <div class="controlador">
+                    <div>Perfil de Riesgo</div>
+                    <div class="div_select">
+                        <select id="perfil_riesgo" name="perfil_riesgo">
+                            <option value="">Seleccione una opción</option>
+                            <option value="1">Conservador</option>
+                            <option value="2">Moderado</option>
+                            <option value="3">Agresivo</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- fin de controlador -->
+                <!-- inicio de controlador -->
+                <div class="controlador">
+                    <div>Mes de Inicio</div>
+                    <input type="text" value="" placeholder="Mes de inicio" id="mes_inicio" name="mes_inicio">
+                </div>
+                <!-- fin de controlador -->
+                <!-- inicio de controlador -->
+                <div class="controlador">
+                    <div>Mes Final</div>
+                    <input type="text" value="" placeholder="Mes Final" id="mes_final" name="mes_final">
+                </div>
+                <!-- fin de controlador -->
+                <!-- inicio de controlador -->
+                <div class="controlador">
+                    <div>Monto de inversión</div>
+                    <input type="text" value="" placeholder="$" id="monto_inversion" name="mes_final">
+                </div>
+                <!-- fin de controlador -->
+                <!-- inicio de controlador -->
+                <div class="controlador full">
+                    <button id="btn_simular">Simular</button>
+                </div>
+                <!-- fin de controlador -->
+            </div>
+
+            <!-- inicio contenedor alertas -->
+            <div class="contenedor_alerta">
+                <a class="cerrar">cerrar</a>
+                <div class="mensaje"></div>
+            </div>
+            <div style="clear: both"></div>
+            <!-- fin contenedor alertas -->
+
+        </div>
+        <!-- fin barra contenidos -->
+        <!-- inicio barra navegación -->
+        <footer>
+            <div class="contenedor">
+                <nav>
+	<ul >
+						<li >
+							<a href="pmp-menu.html" id="icono1"></a>
+						</li>
+
+						<li>
+							<a href="pmp-fiducuaria-bogota.html" id="icono3"></a>
+						</li>
+						<li>
+							<a href="pmp-descubre-perfil.html" id="icono4"></a>
+						</li>
+						<li>
+							<a href="pmp-simuladores.html" id="icono7"></a>
+						</li>
+
+						<li>
+							<a id="icono5"></a>
+						</li>
+						<li>
+							<a href="pmp-fiducia-administracion.html" id="icono8"></a>
+						</li>
+						<li>
+							<a href="pmp-fiducia-administracion.html" id="icono10"></a>
+						</li>
+					</ul>
+                </nav>
+            </div>
+        </footer>
+
+
+        <!-- fin barra navegación -->
+        <script src="UserSystem/js/jquery-1.9.1.js" type="text/javascript"></script>
+        <script src="UserSystem/js/jquery-ui-1.10.1.min.js" type="text/javascript"></script>
+        <script src="UserSystem/js/numeral.js" type="text/javascript"></script>
+        <script src="UserSystem/js/simulador.js" type="text/javascript"></script>
+        
+
+    </body>
+</html>

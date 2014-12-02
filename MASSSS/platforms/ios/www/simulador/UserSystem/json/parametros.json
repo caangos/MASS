@@ -1,0 +1,16 @@
+{
+    "parametros": [
+        {
+            "var_rentabilidad": 1,
+            "var_indice": 100,
+            "fecha_inicio": "31/12/2010",
+            "fecha_final" : "30/06/2014",
+            "sumar" : 20247.4937686255,
+            "fidugob" : 12129.7808215956,
+            "optimo" : 2097.84485685674,
+            "cubrir" : 1172.22101482715,
+            "fiduaccion" : 27452.2992617629
+            
+        }
+    ]
+}

@@ -1,0 +1,83 @@
+<div id="tab-container" class='tab-container'>
+	<ul class='etabs'>
+		<li id="tab-uno" class='tab'>
+			<a href="#fiduciario">Encargo fiduciario</a>
+			<img src="UserSystem/img/sombra-tab.png" />
+		</li>
+		<li class='tab' id="tab-dos">
+			<a href="#mercantil">Fiducia mercantil</a>
+			<img src="UserSystem/img/sombra-tab.png" />
+		</li>
+		<li id="tab-tres" class='tab'>
+			<a href="#publica">Fiducia publica</a>
+			<img src="UserSystem/img/sombra-tab.png" />
+		</li>
+	</ul>
+	<div class='panel-container'>
+		<div id="fiduciario">
+			<p class="texto-tabs">
+				El Fideicomitente ecomienda a la fiduciaria la admistración de bienes para la ejecución
+				de determinadas actividades previstas en el contrato, sin que exista transferencia
+				de propiedad de los mismos.
+			</p>
+		</div>
+
+		<div id="mercantil">
+
+			<p class="texto-tabs">
+				Bajo esta modalidad de contrato, el Fideicomitente transfiere la propiedad de  uno o
+				más bienes para el cumplimiento de la finalidad prevista en el contrato, conformándose
+				con dichos bienes un patrimonio autónomo.
+				<br />
+				<br />
+				Los bienes que integran el patrimonio autónomo quedan separados de los activos del
+				fideicomitente, de la fiduciaria y de los activos de otros negocios fiduciarios.
+				<br />
+				<br />
+				El patrimonio autónomo es sujeto de derechos y obligaciones.
+			</p>
+			<div class="fiducia-mercantil">
+				<button id="grafica-fiducia-mercantil" class="boton-ver-grafica-fiducia-mercantil" >
+
+					Ver gráficas
+
+				</button>
+				<!-- inicio contenedor alertas -->
+				<div class="contenedor_alerta">
+					<a class="cerrar">cerrar</a>
+					<div class="mensaje"><img src="UserSystem/img/graficas/grafica-barras-ceois.png" />
+					</div>
+				</div>
+				<div style="clear: both"></div>
+				<!-- fin contenedor alertas -->
+			</div>
+		</div>
+
+		<div id="publica">
+			<p class="texto-tabs">
+				Encargos fiduciarios que celebren las entidades estatales con las sociedades fidu-
+				ciarias,tendrán por objeto la administración o el manejo de los recursos vinculados a los
+				contratos que tales entidades celebren. (objeto fimitado).
+				<br />
+				Nunca implicará transferencia del derecho de dominio sobre bienes o recursos esta-
+				tales, ni constituirá patrimonio autónomo
+			</p>
+		</div>
+	</div>
+</div>
+
+<!-- fin barra navegación -->
+<script src="UserSystem/js/jquery-1.9.1.js" type="text/javascript"></script>
+<script src="UserSystem/js/jquery-ui-1.10.1.min.js" type="text/javascript"></script>
+<script src="UserSystem/js/llamados.js" type="text/javascript"></script>
+<!-- JS Tabs -->
+<script src="UserSystem/js/vendor/jquery-1.7.1.min.js" type="text/javascript"></script>
+<script src="UserSystem/js/vendor/jquery.hashchange.min.js" type="text/javascript"></script>
+<script src="UserSystem/js/vendor/lib/jquery.easytabs.min.js" type="text/javascript"></script>
+<!--Script Tabs-->
+<script type="text/javascript">
+	$(document).ready(function() {
+	$('#tab-container').easytabs();
+	});
+</script>
+<!--Js Principales tales como header y footer-->
